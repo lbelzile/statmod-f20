@@ -1,0 +1,26 @@
+title: Statistical Modelling
+
+url: https://lbelzile.github.io/statmod
+
+template:
+  params:
+    bootswatch: flatly
+    noindex: true
+  docsearch:
+    api_key: API_KEY
+    index_name: INDEX_NAME   
+    
+navbar:
+  title:
+  type: default
+  left:
+  - text: Content
+    href: articles/content.html
+  - text: Syllabus
+    href: articles/syllabus.html
+  - text: Contributors
+    href: articles/team.html
+
+authors:
+  Léo Belzile:
+    href: https://lbelzile.bitbucket.io
