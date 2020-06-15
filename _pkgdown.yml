@@ -11,10 +11,10 @@ navbar:
   title:
   type: default
   left:
-  - text: Course notes
-    href: https://lbelzile.github.io/math60604a
   - text: Content
     href: articles/content.html
+  - text: Course notes
+    href: https://lbelzile.github.io/math60604a
   - text: Syllabus
     href: articles/syllabus.html
   - text: Contributors

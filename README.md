@@ -1,4 +1,4 @@
-## Content
+## Course description
 
 The objective is to provide students with the basics of statistical inference, as well as statistical tools for data modeling in a regression framework. The theory behind the statistical models will be reviewed with some specific emphasis on data applications using the software **SAS**.
 
