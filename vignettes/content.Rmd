@@ -16,13 +16,13 @@ The course content is divided in chapters: for each topic,
 readers have access to course notes, sample code, online quizzes and exercises.
 
 
-- [Basics of inference](https://lbelzile.github.io/math60604/intro/)
-- [Linear regression](https://lbelzile.github.io/math60604/linear-regression/)
-- [Generalized linear models](https://lbelzile.github.io/math60604/generalized-linear-models/)
-- [Correlated and longitudinal data](https://lbelzile.github.io/math60604/correlated-longitudinal-data/)
-- [Linear mixed models](https://lbelzile.github.io/math60604/linear-mixed-models/)
-- [Survival analysis](https://lbelzile.github.io/math60604/survival/)
-
+- [Basics of inference](https://lbelzile.github.io/math60604a/intro/)
+- [Linear regression](https://lbelzile.github.io/math60604a/linear-regression/)
+- [Generalized linear models](https://lbelzile.github.io/math60604a/generalized-linear-models/)
+- [Correlated and longitudinal data](https://lbelzile.github.io/math60604a/correlated-longitudinal-data/)
+- [Linear mixed models](https://lbelzile.github.io/math60604a/linear-mixed-models/)
+- [Survival analysis](https://lbelzile.github.io/math60604a/survival/)
+- [Likelihood](https://lbelzile.github.io/math60604a/likelihood/)
 
 ---
 

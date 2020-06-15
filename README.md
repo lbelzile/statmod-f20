@@ -1,19 +1,8 @@
-# Statistical Modelling
-
-- Main course site: https://lbelzile.github.io/statmod
-- Course notes: https://lbelzile.github.io/math60604a
-- Repository on Github: https://github.com/lbelzile/statmod
-
-
 ## Content
 
-The objective is to provide students with the basics of statistical inference, as well as statistical tools for
-data modeling in a regression framework. The theory behind the statistical models will be reviewed with
-some specific emphasis on data applications using the sotiware **SAS**.
+The objective is to provide students with the basics of statistical inference, as well as statistical tools for data modeling in a regression framework. The theory behind the statistical models will be reviewed with some specific emphasis on data applications using the software **SAS**.
 
-The course will focus on regression models, including linear models, generalized linear models and models
-for longitudinal data with random effects and correlation structure. For each of these models, basic
-inference principles will be reviewed such as hypothesis testing and estimation procedures.
+The course will focus on regression models, including linear models, generalized linear models and models for longitudinal data with random effects and correlation structure. For each of these models, basic inference principles will be reviewed such as hypothesis testing and estimation procedures.
 
 
 - Basic principles in inference and statistical modeling
@@ -25,16 +14,14 @@ inference principles will be reviewed such as hypothesis testing and estimation 
 
 ## Concept
 
-This course is organized as a flipped classroom. The learning material includes course notes,
-slides with accompanying videos and quiz along with short coding exercises. 
-Students must complete this material ahead of class time: the latter will be devoted to discussion
-about the material and exercises, workshops and code demonstrations.
+This course is organized as a flipped classroom. The learning material includes course notes, slides with accompanying videos and quiz along with short coding exercises. 
+
+Students must read and go through the learning material before class time: the latter will be devoted to discussion about the material and exercises, workshops and code demonstrations.
 
 ## Prerequisites
 
 
-The course is of an overview course. Students should have basic training in statistics
-at the level of [_Introductory Statistics with Randomization and Simulation_](https://www.openintro.org/book/isrs/) (Chapters 1--4, excluding special topics). Familiarity with basic calculus and linear algebra is also assumed. 
+The course is of an overview course. Students should have basic training in statistics at the level of [_Introductory Statistics with Randomization and Simulation_](https://www.openintro.org/book/isrs/) (Chapters 1--4, excluding special topics). Familiarity with basic calculus and linear algebra is also assumed. 
 
 ## Target audience
 

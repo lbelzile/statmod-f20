@@ -6,20 +6,22 @@ template:
   params:
     bootswatch: flatly
     noindex: true
-  docsearch:
-    api_key: API_KEY
-    index_name: INDEX_NAME   
     
 navbar:
   title:
   type: default
   left:
+  - text: Course notes
+    href: https://lbelzile.github.io/math60604a
   - text: Content
     href: articles/content.html
   - text: Syllabus
     href: articles/syllabus.html
   - text: Contributors
     href: articles/team.html
+  right:
+  - icon: fa-github
+    href: https://github.com/lbelzile/statmod
 
 authors:
   Léo Belzile:
