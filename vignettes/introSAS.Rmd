@@ -1,0 +1,29 @@
+---
+title: "SAS Introduction"
+output: rmarkdown::html_vignette
+toc:
+  depth: 2
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{SAS Introduction}
+---
+
+## Software and Installation
+
+The **SAS** institutional licence is provided for free, but the IT service at HEC charge users for the download of the software. If you bought the download in the past, you are eligible for free updates. This software may only be used as long as you are a student at HEC Montréal.
+
+I recommend you install instead [SAS University Edition (**SAS UE**)](https://www.sas.com/en_us/software/university-edition.html), which is free for students. You can access the software from a web browser: the language depends on that of the latter. If you have a Mac (or Unix system), this solution helps you avoid having to install Windows 10 on a virtual machine (a stupid solution if I know one).
+
+We will only use the SAS/BASE and SAS/STAT modules throughout the course
+
+## **SAS** Introduction
+
+
+- [Video recording](https://hecmontreal.yuja.com/V/Video?v=87020&node=440156&a=460010524&autoplay=1)
+- [Diapositives](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SAS_intro.pdf)
+- [Code](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SAS_intro.sas)
+- [Exercices](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SASexercises.pdf)
+- [Exercices (code SAS)](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SASexercises.sas)
+- [Dataset (zip)](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/Intro_SAS_data.zip)
+

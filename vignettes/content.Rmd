@@ -30,15 +30,20 @@ readers have access to course notes, sample code, online quizzes and exercises.
 
 ## Videos and Slides
 
-In this section you can find the links to all videos individually as well as
-the slides used in the videos.
+In this section you can find the links to all videos individually as well as the slides and accompanying code used in the videos.
 
-```{r, echo=FALSE, eval=FALSE, message=FALSE}
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
 source("get_slide_data.R")
-library("knitr")
 
-kable(subset(sldat, select = c("Lesson", "Description", "Topic", "YouTube", "PDF")), 
-    row.names = FALSE)
+knitr::kable(sldat)
+```
+
+
+## Exercises
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("get_exercise_data.R")
+knitr::kable(exdat, row.names = FALSE)
 ```
 
 

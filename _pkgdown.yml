@@ -16,7 +16,7 @@ navbar:
   - text: Course notes
     href: https://lbelzile.github.io/math60604a
   - text: Syllabus
-    href: ../syllabus/MATH60604A-F20-Syllabus.pdf
+    href: https://github.com/lbelzile/statmod/raw/master/syllabus/MATH60604A-F20-Syllabus.pdf
   - text: Contributors
     href: articles/team.html
   right:
