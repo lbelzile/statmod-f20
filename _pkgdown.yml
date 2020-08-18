@@ -11,12 +11,16 @@ navbar:
   title:
   type: default
   left:
-  - text: Content
+  - text: "Pedagogical material"
     href: articles/content.html
-  - text: Course notes
-    href: https://lbelzile.github.io/math60604a
-  - text: Syllabus
-    href: https://github.com/lbelzile/statmod/raw/master/syllabus/MATH60604A-F20-Syllabus.pdf
+  - text: Ressources
+    menu:
+     - text: Syllabus
+       href: https://github.com/lbelzile/statmod/raw/master/syllabus/MATH60604A-F20-Syllabus.pdf
+     - text: Course notes
+       href: https://lbelzile.github.io/math60604a
+     - text: "SAS Intro"
+       href: articles/introSAS.html
   - text: Contributors
     href: articles/team.html
   right:

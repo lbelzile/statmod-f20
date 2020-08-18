@@ -1,14 +1,14 @@
-exdir <- "../exercices"
+exdir <- "../exercises"
 
 ## exercise and solution files
 fn <- FALSE
-ex <- list.files(path = exdir, pattern = "MATH60604-Exercice[[:digit:]].pdf", 
+ex <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]].pdf", 
     full.names = fn)
-codesas <- list.files(path = exdir, pattern = "MATH60604-Exercice[[:digit:]].sas", 
+codesas <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]].sas", 
                  full.names = fn)
-coder <- list.files(path = exdir, pattern = "MATH60604-Exercice[[:digit:]].R", 
+coder <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]].R", 
                       full.names = fn)
-so <- list.files(path = exdir, pattern = "MATH60604-Exercice[[:digit:]]-sol.pdf", 
+so <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]]-sol.pdf", 
     full.names = fn)
 
 
@@ -16,21 +16,21 @@ so <- list.files(path = exdir, pattern = "MATH60604-Exercice[[:digit:]]-sol.pdf"
 ## Numbers + Topics
 # exid <- as.numeric(gsub("[^0-9.-]+", "", ex))
 topics <- 
-  c("Bases de l'inférence statistique", 
-    "Régression linéaire",
-    "Vraisemblance",
-    "Modèles linéaires généralisés",
-    "Données corrélées et longitudinales",
-    "Modèles linéaires mixtes",
-    "Analyse de survie")
-exdat <- data.frame(Chapitre = topics)
+  c("Basics of statistical inference", 
+    "Linear regression",
+    "Likelihood methods",
+    "Generalized linear models",
+    "Correlated and longitudinal data",
+    "Linear mixed models",
+    "Survival analysis")
+exdat <- data.frame(Chapter = topics)
 
 
 ## Links
-linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/modstat/blob/master/exercices/"
-linkgithub <- "https://raw.githubusercontent.com/lbelzile/modstat/master/"
-exdat$Exercice <- c(paste0("[exercice](", linkstring, ex, ")"),rep("", length.out = 7-length(ex)))
+linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/statmod/blob/master/exercises/"
+linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/master/"
+exdat$Exercice <- c(paste0("[exercise](", linkstring, ex, ")"),rep("", length.out = 7-length(ex)))
 exdat$Solution <- c(paste0("[solution](", linkstring, so, ")"),rep("", length.out = 7-length(so)))
-exdat$`Code SAS` <- c(paste0("[code SAS](", linkgithub, "exercices/",codesas, ")"),rep("", length.out = 7-length(codesas)))
-exdat$`Code R` <- c(paste0("[code R](", linkgithub, "exercices/", coder, ")"),rep("", length.out = 7-length(coder)))
+exdat$`Code SAS` <- c(paste0("[code SAS](", linkgithub, "exercises/",codesas, ")"),rep("", length.out = 7-length(codesas)))
+exdat$`Code R` <- c(paste0("[code R](", linkgithub, "exercises/", coder, ")"),rep("", length.out = 7-length(coder)))
 
