@@ -8,14 +8,46 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{SAS Introduction}
 ---
+## SAS onDemand for Academics: Studio
 
-## Software and Installation
+As a first step, please create your account for SAS OnDemand for Academics. To register, visit https://odamid.oda.sas.com and click on Register for an account.
 
-The **SAS** institutional licence is provided for free, but the IT service at HEC charge users for the download of the software. If you bought the download in the past, you are eligible for free updates. This software may only be used as long as you are a student at HEC Montréal.
+After you have successfully created your account, follow these steps:
 
-I recommend you install instead [SAS University Edition (**SAS UE**)](https://www.sas.com/en_us/software/university-edition.html), which is free for students. You can access the software from a web browser: the language depends on that of the latter. If you have a Mac (or Unix system), this solution helps you avoid having to install Windows 10 on a virtual machine (a stupid solution if I know one).
+- Sign on the the Control Center at https://odamid.oda.sas.com.
+- Look for the *Enroll in a course* link in the "*Enrollments*" section near the bottom of the page. Click this link to start the enrollment.
+- Enter the course code: `de87d662-6994-481b-9a3d-d50434654171`.
+- Submit the form.
+- Confirm that this is the correct course and then click the button to finish enrolling.
 
-We will only use the SAS/BASE and SAS/STAT modules throughout the course
+To access the course database, use the following opening statement in your **SAS** script:
+
+`LIBNAME modstat "~/my_shared_file_links/u41148888/statmod" access=readonly;`
+
+
+
+### SAS® OnDemand for Academics
+
+| Course Details | |
+|:----|:----|
+|Course name:	| MATH 60604A|
+|Level:|	Graduate |
+|Institution:|	HEC Montreal |
+|Course Code:|	`de87d662-6994-481b-9a3d-d50434654171`|
+|Description:|	Statistical Modelling|
+
+
+
+
+## Installation
+
+We will only use the SAS/BASE and SAS/STAT modules throughout the course. 
+If you prefer to install **SAS** on your computer, there are two options.
+
+I recommend you install [SAS University Edition (**SAS UE**)](https://www.sas.com/en_us/software/university-edition.html), which is free for students. You can access the software from a web browser: the language depends on that of the latter. If you have a Mac (or Unix system), this solution helps you avoid having to install Windows 10 on a virtual machine (a stupid solution if I know one).
+
+If you have Windows PC, you could also install **SAS** directly. The institutional licence is provided for free, but the IT services at HEC charge users for the download of the software. If you bought the download in the past, you are eligible for free updates. This software may only be used as long as you are a student at HEC Montréal.
+
 
 ## **SAS** Introduction
 
