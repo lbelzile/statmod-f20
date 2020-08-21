@@ -51,6 +51,10 @@ If you have Windows PC, you could also install **SAS** directly. The institution
 
 ## **SAS** Introduction
 
+If you access **SAS** via the server, you can load the data using the following command:
+```{sas loadintro, eval = FALSE}
+LIBNAME multi "~/my_shared_file_links/u41148888/multi" access=readonly;
+```
 
 - [Video recording](https://hecmontreal.yuja.com/V/Video?v=87020&node=440156&a=460010524&autoplay=1)
 - [Diapositives](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SAS_intro.pdf)

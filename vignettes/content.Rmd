@@ -1,16 +1,14 @@
 ---
-title: "Content"
+title: "Learning material"
 output: rmarkdown::html_vignette
 toc:
   depth: 2
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
-  %\VignetteIndexEntry{Content}
+  %\VignetteIndexEntry{Learning material}
 ---
 
-
-## Learning material
 
 The course content is divided in chapters: for each topic,
 readers have access to course notes, sample code, online quizzes and exercises.
@@ -46,7 +44,7 @@ knitr::kable(exdat, row.names = FALSE)
 
 ## Data
 
-The **SAS** databases (`.sas7bdat`) can be downloaded [by clicking on this link.](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604A_SAS_data.zip).
+The **SAS** databases (`.sas7bdat`) can be downloaded [by clicking on this link](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604A_SAS_data.zip).
 
 You can also access the data sets in **R** by installing the `hecmodstat` package from Github using the following commands (uncomment the first line to install the  `remotes` and `learnr` libraries):
 
@@ -60,5 +58,6 @@ The **R** package also contain quizzes: to run the later and launch a new browse
 ```{r eval = FALSE}
 learnr::run_tutorial("intro", package = "hecstatmod")
 ```
-for the `intro` tutorial.
+for the `intro` tutorial. 
+*Note*: not all data sets are currently documented and tutorials are still missing. Please re-install periodically to benefit from the latest features.
 
