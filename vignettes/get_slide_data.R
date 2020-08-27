@@ -1,4 +1,5 @@
 slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "*.html")
+slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "*.pdf")
 ns <- length(slides)
 codedir <- "../code"
 names <- c("Course Outline",
@@ -28,7 +29,8 @@ codeRstr[nid+1L] <- paste0("[R](",linkgithub,"code/", codeR,")")
 
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
 sldat <- data.frame('W' = week, 
-                    Slides = paste0("[",names,"](",url, slides,")"),
-                    Videos =  paste0("[videos](", video, ")"),
+                    Topic = names,
+                    Slides = paste0("[html](",url, slides,") [pdf](",url, slidespdf,")"),
+                    Videos =  paste0("[link](", video, ")"),
                     SAS = codestr,
                     R = codeRstr)

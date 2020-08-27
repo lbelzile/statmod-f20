@@ -51,6 +51,7 @@ run;
 data multi.transforme;
  set transforme;
 run;
+/* The previous lines will only work if you have write access to the multi library */
 
 *PROC step;
 proc freq data=transforme;

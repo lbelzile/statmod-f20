@@ -21,8 +21,12 @@
 /* Exercise 5 */
 /* ---------- */
 
-  proc sort data=multi.aapl;
-    by  date;
+ data aapl;
+  set multi.aapl;
+ run;
+
+  proc sort data=aapl;
+    by date;
   run;
 
   data aapl2; /* a temporary dataset is created in the "Work" library */

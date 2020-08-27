@@ -84,7 +84,7 @@
 
       
 
-      </header><script src="content_files/header-attrs-2.3/header-attrs.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Learning material</h1>
@@ -115,6 +115,7 @@
 <table class="table">
 <thead><tr class="header">
 <th align="right">W</th>
+<th align="left">Topic</th>
 <th align="left">Slides</th>
 <th align="left">Videos</th>
 <th align="left">SAS</th>
@@ -123,29 +124,41 @@
 <tbody>
 <tr class="odd">
 <td align="right">0</td>
-<td align="left"><a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w0_syllabus.html">Course Outline</a></td>
-<td align="left"><a href="https://youtu.be/9U1WCxFUmjA">videos</a></td>
+<td align="left">Course Outline</td>
+<td align="left">
+<a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w0_syllabus.html">html</a> <a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w0_syllabus.pdf">pdf</a>
+</td>
+<td align="left"><a href="https://youtu.be/9U1WCxFUmjA">link</a></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="right">1</td>
-<td align="left"><a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1a_tests.html">Hypothesis Tests</a></td>
-<td align="left"><a href="https://youtu.be/TSMuEX8FqYo">videos</a></td>
+<td align="left">Hypothesis Tests</td>
+<td align="left">
+<a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1a_tests.html">html</a> <a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1a_tests.pdf">pdf</a>
+</td>
+<td align="left"><a href="https://youtu.be/TSMuEX8FqYo">link</a></td>
 <td align="left"><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/code/MATH60604A_1a_test.sas">SAS</a></td>
 <td align="left"><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/code/MATH60604A_1a_test.R">R</a></td>
 </tr>
 <tr class="odd">
 <td align="right">1</td>
-<td align="left"><a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1b_clt.html">Central Limit Theorem</a></td>
-<td align="left"><a href="https://youtu.be/nCUT05szKwQ">videos</a></td>
+<td align="left">Central Limit Theorem</td>
+<td align="left">
+<a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1b_clt.html">html</a> <a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1b_clt.pdf">pdf</a>
+</td>
+<td align="left"><a href="https://youtu.be/nCUT05szKwQ">link</a></td>
 <td align="left"></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="right">1</td>
-<td align="left"><a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1c_eda.html">Exploratory Data Analysis</a></td>
-<td align="left"><a href="https://youtu.be/5Yc46pAQpFk">videos</a></td>
+<td align="left">Exploratory Data Analysis</td>
+<td align="left">
+<a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1c_eda.html">html</a> <a href="https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w1c_eda.pdf">pdf</a>
+</td>
+<td align="left"><a href="https://youtu.be/5Yc46pAQpFk">link</a></td>
 <td align="left"><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/code/MATH60604A_1c_eda.sas">SAS</a></td>
 <td align="left"><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/code/MATH60604A_1c_eda.R">R</a></td>
 </tr>
@@ -224,7 +237,7 @@
 <div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co">#install.packages(c("learnr","remotes"))</span>
 <span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"lbelzile/hecstatmod"</span>)</pre></body></html></div>
 <p>The <strong>R</strong> package also contain quizzes: to run the later and launch a new browser window, use the following command:</p>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="kw pkg">learnr</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span>(<span class="st">"intro"</span>, <span class="kw">package</span> <span class="kw">=</span> <span class="st">"hecstatmod"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="kw pkg">learnr</span><span class="kw ns">::</span><span class="fu">run_tutorial</span>(<span class="st">"intro"</span>, <span class="kw">package</span> <span class="kw">=</span> <span class="st">"hecstatmod"</span>)</pre></body></html></div>
 <p>for the <code>intro</code> tutorial. <em>Note</em>: not all data sets are currently documented and (most) tutorials are still missing. Please re-install the package periodically to benefit from the latest features.</p>
 </div>
   </div>
