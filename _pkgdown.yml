@@ -13,6 +13,8 @@ navbar:
   left:
   - text: "Pedagogical material"
     href: articles/content.html
+  - text: "Detailed outline"
+    href: articles/detailedoutline.html
   - text: Ressources
     menu:
      - text: Syllabus

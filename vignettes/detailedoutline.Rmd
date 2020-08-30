@@ -1,0 +1,40 @@
+---
+title: "Detailed outline"
+output: rmarkdown::html_vignette
+toc:
+  depth: 2
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{Detailed outline}
+---
+
+## Week 1
+
+### Before class:
+
+- Video recordings: 0, 1a, 1b, 1c
+- Course notes: chapter 1 and Appendix A
+- Create an account on **SAS** onDemand 
+- Complete the [Introduction to **SAS**](https://lbelzile.github.io/statmod/articles/introSAS.html)
+
+### In class:
+
+- Presentation and practice of pedagogical tools (Zoom / Etherpad / Wooclap / SAS onDemand)
+- [Graphics workshop (group)](https://github.com/lbelzile/modstat/raw/master/atelier/graphiques/graphics.zip)
+- Exercise 1.4 (a-b) with **SAS**
+
+
+### Additional readings:
+
+- [Chapter 1 of *Data Visualization: A practical introduction* by Kieran Healy](https://socviz.co/lookatdata.html#lookatdata)
+- [Permutation tests](https://www.jwilber.me/permutationtest/)
+- [DataViz Cheatsheet](https://policyviz.com/2018/08/07/dataviz-cheatsheet/)
+- [Chapter 7 of _**R** for Data Science_ by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/)
+
+### Other references:
+
+- [Chapter 3 of _**R** for Data Science_ by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/)
+- [*Fundamentals of Data Visualization* by Claus O. Wilke](https://clauswilke.com/dataviz/)
+- [Financial Times Visual Vocabulary](	https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
+- [BBC R Cookbook (optional)](https://bbc.github.io/rcookbook/)

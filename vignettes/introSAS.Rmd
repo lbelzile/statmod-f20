@@ -8,7 +8,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{SAS Introduction}
 ---
-## SAS onDemand for Academics: Studio
 
 As a first step, please create your account for SAS OnDemand for Academics. To register, visit https://odamid.oda.sas.com and click on Register for an account.
 
@@ -26,7 +25,7 @@ To access the course database, use the following opening statement in your **SAS
 
 
 
-### SAS® OnDemand for Academics
+### SAS® OnDemand for Academics credentials
 
 | Course Details | |
 |:----|:----|
@@ -37,12 +36,9 @@ To access the course database, use the following opening statement in your **SAS
 |Description:|	Statistical Modelling|
 
 
-
-
 ## Installation
 
-We will only use the SAS/BASE and SAS/STAT modules throughout the course. 
-If you prefer to install **SAS** on your computer, there are two options.
+We will only use the SAS/BASE and SAS/STAT modules throughout the course. If you prefer to install **SAS** on your computer, there are two options.
 
 I recommend you install [SAS University Edition (**SAS UE**)](https://www.sas.com/en_us/software/university-edition.html), which is free for students. You can access the software from a web browser: the language depends on that of the latter. If you have a Mac (or Unix system), this solution helps you avoid having to install Windows 10 on a virtual machine (a stupid solution if I know one).
 
@@ -56,10 +52,12 @@ If you access **SAS** via the server, you can load the data using the following 
 LIBNAME multi "~/my_shared_file_links/u41148888/multi" access=readonly;
 ```
 
+Note that you will need to create copies to modify the files.
+
 - [Video recording](https://hecmontreal.yuja.com/V/Video?v=87020&node=440156&a=460010524&autoplay=1)
-- [Diapositives](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SAS_intro.pdf)
+- [Slides](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SAS_intro.pdf)
 - [Code](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SAS_intro.sas)
-- [Exercices](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SASexercises.pdf)
-- [Exercices (code SAS)](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SASexercises.sas)
-- [Dataset (zip)](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/Intro_SAS_data.zip)
+- [Exercises](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SASexercises.pdf)
+- [Exercises (**SAS** code)](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SASexercises.sas)
+- [Datasets (zip)](https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/Intro_SAS_data.zip)
 

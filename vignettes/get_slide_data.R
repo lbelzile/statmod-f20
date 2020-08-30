@@ -1,4 +1,5 @@
 slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "*.html")
+slides <- slides[substr(slides, 1, 12) == "MATH60604A_w"]
 ns <- length(slides)
 codedir <- "../code"
 names <- c("Course Outline",
@@ -6,7 +7,7 @@ names <- c("Course Outline",
            "Central Limit Theorem",
            "Exploratory Data Analysis")
 week <- as.numeric(substr(slides, 13,13))
-video <- c("https://youtu.be/9U1WCxFUmjA",
+video <- c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/TSMuEX8FqYo",
             "https://youtu.be/nCUT05szKwQ",
             "https://youtu.be/5Yc46pAQpFk")
