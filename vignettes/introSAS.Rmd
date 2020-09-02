@@ -21,8 +21,9 @@ After you have successfully created your account, follow these steps:
 
 To access the course database, use the following opening statement in your **SAS** script:
 
-`LIBNAME modstat "~/my_shared_file_links/u41148888/statmod" access=readonly;`
+`LIBNAME statmod "~/my_shared_file_links/u41148888/statmod" access=readonly;`
 
+You must create a local copy to modify these data.
 
 
 ### SAS® OnDemand for Academics credentials

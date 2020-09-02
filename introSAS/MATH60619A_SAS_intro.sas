@@ -312,7 +312,10 @@ run;
 ods rtf;
 /* In SAS Studio (SAS University Edition), 
  you need to set the folder to within virtual machine, e.g.
-ods rtf file='/folders/myfolders/tableau1.rtf'; */
+ods rtf file='/folders/myfolders/tableau1.rtf'; 
+alternatively, you could also use the GUI button to export the file
+*/
+
 proc freq data=intro_ex1;
  tables age_cat*n_visite_cat;
 run;
@@ -358,8 +361,6 @@ run;
 *Part 4 : Graphs;
 *=====================;
 
-ods graphics on;
-ods rtf;
 
 proc sgplot data=intro_ex1; /* histogram of age variable */
 histogram age;
@@ -373,8 +374,6 @@ proc sgplot data=intro_ex1; /* scatterplot of number of visits as a function of 
 scatter x=age y=n_visite;
 run;
 
-ods rtf close;
-ods graphics off;
 
 
 /* Document prepared by Denis Larocque, revised by Marc Fredette and Jean-François Plante. */

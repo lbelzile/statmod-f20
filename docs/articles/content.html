@@ -222,7 +222,10 @@
 <div id="data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#data" class="anchor"></a>Data</h2>
-<p>The <strong>SAS</strong> databases (<code>.sas7bdat</code>) can be downloaded <a href="https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604A_SAS_data.zip">by clicking on this link</a>.</p>
+<p>The <strong>SAS</strong> databases (<code>.sas7bdat</code>) can be downloaded <a href="https://raw.githubusercontent.com/lbelzile/statmod/master/datasets/MATH60604A_SAS_data.zip">by clicking on this link</a>. Create a repository on SAS onDemand, add these files and create a library as shown in the Introduction to SAS.</p>
+<p>To access the course database, you can also add the following code snipett at the top of your <strong>SAS</strong> scripts:</p>
+<p><code>LIBNAME statmod "~/my_shared_file_links/u41148888/statmod" access=readonly;</code></p>
+<p>You must create a local copy to modify these data.</p>
 <p>You can also access the data sets in <strong>R</strong> by installing the <code>hecmodstat</code> package from Github using the following commands (uncomment the first line to install the <code>remotes</code> and <code>learnr</code> libraries):</p>
 <div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co">#install.packages(c("learnr","remotes"))</span>
 <span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"lbelzile/hecstatmod"</span>)</pre></body></html></div>

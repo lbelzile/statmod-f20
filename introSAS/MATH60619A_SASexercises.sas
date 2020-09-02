@@ -54,6 +54,8 @@
 
   /* Note: there exist other formats for the output. For example, we could 
   	 replace rtf by html or pdf. */
+  /* These commands only work on Windows with a write-access to folders
+  on SAS UE and SAS onDemand, you must use the GUI interface to export the files */
 
 /* Exercise 8 */
 /* ---------- */
@@ -89,16 +91,9 @@ Path:       Means.Summary
 /* Exercise 9 */
 /* ---------- */
 
-ods graphics on; 
-ods rtf;
-
 proc sgplot data=aapl2;          
 histogram aug;
 run;
-
-ods rtf close;
-ods graphics off; 
-
 
 
 
