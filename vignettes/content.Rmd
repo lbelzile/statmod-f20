@@ -58,6 +58,9 @@ You can also access the data sets in **R** by installing the `hecmodstat` packag
 #install.packages(c("learnr","remotes"))
 remotes::install_github("lbelzile/hecstatmod")
 ```
+*Note*: not all data sets are currently documented and (most) tutorials are still missing. Please re-install the package periodically to benefit from the latest features.
+
+## Quiz
 
 The **R** package also contain quizzes: to run the later and launch a new browser window, use the following command:
 
@@ -65,5 +68,5 @@ The **R** package also contain quizzes: to run the later and launch a new browse
 learnr::run_tutorial("intro", package = "hecstatmod")
 ```
 for the `intro` tutorial. 
-*Note*: not all data sets are currently documented and (most) tutorials are still missing. Please re-install the package periodically to benefit from the latest features.
+
 
