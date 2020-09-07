@@ -5,12 +5,19 @@ codedir <- "../code"
 names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
-           "Exploratory Data Analysis")
+           "Exploratory Data Analysis",
+           "Parameter interpretation (linear model)",
+           "Linear transformations",
+           "Geometry of least squares")
 week <- as.numeric(substr(slides, 13,13))
 video <- c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/TSMuEX8FqYo",
             "https://youtu.be/nCUT05szKwQ",
-            "https://youtu.be/5Yc46pAQpFk")
+            "https://youtu.be/5Yc46pAQpFk",
+            "https://youtu.be/4jOnZrnPlUM",
+            "https://youtu.be/MzmS9r-77lI",
+           "https://youtu.be/F9dR6mpOVtI"
+           )
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
 }
