@@ -8,6 +8,11 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Detailed outline}
 ---
+
+
+
+---
+
 ## Week 2
 
 ### Before class:
@@ -18,12 +23,16 @@ vignette: >
 
 ### In class
 
-- Parameter interpretation (`intention` data)
-- Analysis of the `insurance` data
+- Parameter interpretation (`intention` data, full model)
+- EDA of the `insurance` data and construction of a linear model
+- Presentation of the [code to create added-variable plots](https://raw.githubusercontent.com/lbelzile/statmod/master/code/added-variable_plots.sas)
+- xkcd comic strip: [Curve-fitting](https://xkcd.com/2048/)
 
 ### After class:
 
 - Exercises 2.1-2.4
+
+---
 
 ## Week 1
 
