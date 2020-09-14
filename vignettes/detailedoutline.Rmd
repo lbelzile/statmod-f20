@@ -9,7 +9,19 @@ vignette: >
   %\VignetteIndexEntry{Detailed outline}
 ---
 
+## Week 3
 
+
+### Before class:
+
+- Video recordings: 2d, 3a
+- Course notes: chapter 3, chapter 2 (section 4)
+
+### In class:
+
+- **SAS** demonstration 
+- [Tests as linear models](https://lindeloev.github.io/tests-as-linear/)
+- [**Understanding Maximum Likelihood** by Kristoffer Magnusson](https://rpsychologist.com/d3/likelihood/)
 
 ---
 
