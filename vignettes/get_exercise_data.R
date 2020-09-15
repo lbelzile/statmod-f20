@@ -29,8 +29,8 @@ exdat <- data.frame(Chapter = topics)
 ## Links
 linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/statmod/blob/master/exercises/"
 linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/master/"
-exdat$Exercice <- c(paste0("[exercise](", linkstring, ex, ")"),rep("", length.out = 7-length(ex)))
+exdat$Exercise <- c(paste0("[exercise](", linkstring, ex, ")"),rep("", length.out = 7-length(ex)))
 exdat$Solution <- c(paste0("[solution](", linkstring, so, ")"),rep("", length.out = 7-length(so)))
-exdat$`Code SAS` <- c(paste0("[code SAS](", linkgithub, "exercises/",codesas, ")"),rep("", length.out = 7-length(codesas)))
-exdat$`Code R` <- c(paste0("[code R](", linkgithub, "exercises/", coder, ")"),rep("", length.out = 7-length(coder)))
+exdat$`SAS` <- c(paste0("[SAS](", linkgithub, "exercises/",codesas, ")"),rep("", length.out = 7-length(codesas)))
+exdat$`R` <- c(paste0("[R](", linkgithub, "exercises/", coder, ")"),rep("", length.out = 7-length(coder)))
 

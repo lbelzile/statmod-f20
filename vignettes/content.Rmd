@@ -62,11 +62,12 @@ remotes::install_github("lbelzile/hecstatmod")
 
 ## Quiz
 
-The **R** package also contain quizzes: to run the later and launch a new browser window, use the following command:
+The **R** package also contain quizzes: to run the later and launch a new browser window, use the following commands (each line represents a different quiz).
 
 ```{r eval = FALSE}
 learnr::run_tutorial("intro", package = "hecstatmod")
+learnr::run_tutorial("likelihood", package = "hecstatmod")
 ```
-for the `intro` tutorial. 
+
 
 
