@@ -47,7 +47,7 @@ codestr <- rep("", ns)
 nid <- sapply(substr(codesas,12,13), function(x){which(x == index)})
 codestr[nid] <- paste0("[SAS](",linkgithub, "code/", codesas,")")
 
-codeR <- list.files(path = codedir, pattern = "*.R")
+codeR <- list.files(path = codedir, pattern = "MATH60604.*.R")
 codeRstr <- rep("", ns)
 nid <- sapply(substr(codeR,12,13), function(x){pmatch(x, index)})
 codeRstr[nid] <- paste0("[R](",linkgithub,"code/", codeR,")")

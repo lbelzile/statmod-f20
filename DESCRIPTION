@@ -1,7 +1,7 @@
 Package: statmod
 Type: Package
 Title: Statistical modelling course at HEC Montréal
-Version: 2020.06.14
+Version: 2020.09.15
 Authors@R: c(
   person(given = "Léo", family = "Belzile", email = "leo.belzile@hec.ca", role = c("aut","cre")))
 Maintainer: Léo Belzile <leo.belzile@hec.ca>
