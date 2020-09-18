@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c","2a","2b","2c","2d","3_")
-index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","3")
+index <- c("0_","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","3_")
+index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","3")
 names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
@@ -8,19 +8,23 @@ names <- c("Course Outline",
            "Linear transformations",
            "Geometry of least squares",
            "Hypothesis tests (linear model)",
-           "Maximum likelihood estimation")
+           "Coefficient of determination",
+           "Predictions",
+           "Interactions",
+           "Maximum likelihood estimation"
+           )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
 codedir <- "../code"
 
-slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "*.html")
+slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "MATH60604A_w*.html")
 slides <- slides[substr(slides, 1, 12) == "MATH60604A_w"]
 sl <- rep("", ns)
 pmasl <- na.omit(pmatch(index, substr(slides, start = 13, stop = 14)))
 sl[pmasl] <- paste0("[html](",url, slides,")")
 
 
-slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = ".*.pdf")
+slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "MATH60604A_w.*.pdf")
 slidespdf <- slidespdf[substr(slidespdf, 1, 12) == "MATH60604A_w"]
 slpdf <- rep("", ns)
 pmaslp <- na.omit(pmatch(index, substr(slidespdf, start = 13, stop = 14)))

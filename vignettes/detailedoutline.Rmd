@@ -9,6 +9,24 @@ vignette: >
   %\VignetteIndexEntry{Detailed outline}
 ---
 
+## Week 4
+
+
+### Before class:
+
+- Video recordings: 2e-2g
+- Course notes: chapter 2 (section 5-7)
+
+### In class:
+
+- Workshop on interactions (Exercise 2.8)
+
+## After class:
+
+- Exercises 2.5-2.7
+
+---
+
 ## Week 3
 
 
@@ -19,9 +37,14 @@ vignette: >
 
 ### In class:
 
-- **SAS** demonstration 
-- [Tests as linear models](https://lindeloev.github.io/tests-as-linear/)
+- [**R** demo](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A-profile.R): sampling distribution of OLS, profile likelihood for individual coefficients
+- [Interpretation of **SAS** output and tests for the `insurance` data](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A-tests_linear_models.sas)
 - [**Understanding Maximum Likelihood** by Kristoffer Magnusson](https://rpsychologist.com/d3/likelihood/)
+
+## After class
+
+- Exercise sheet 3
+- [Tests as linear models](https://lindeloev.github.io/tests-as-linear/)
 
 ---
 
@@ -37,7 +60,7 @@ vignette: >
 
 - Parameter interpretation (`intention` data, full model)
 - EDA of the `insurance` data and construction of a linear model
-- Presentation of the [code to create added-variable plots](https://raw.githubusercontent.com/lbelzile/statmod/master/code/added-variable_plots.sas)
+- [Code to create added-variable plots](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A-added-variable_plots.sas)
 - xkcd comic strip: [Curve-fitting](https://xkcd.com/2048/)
 
 ### After class:
