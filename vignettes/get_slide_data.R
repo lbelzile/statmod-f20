@@ -11,7 +11,7 @@ names <- c("Course Outline",
            "Coefficient of determination",
            "Predictions",
            "Interactions",
-           "Maximum likelihood estimation"
+           "Likelihood-based inference"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
@@ -39,6 +39,9 @@ video <- c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/MzmS9r-77lI",
             "https://youtu.be/F9dR6mpOVtI",
             "https://youtu.be/PatlZ9mlVuk",
+            "https://youtu.be/3rVrZDReDCk",
+            "https://youtu.be/AubAJT6fSHs",
+            "https://youtu.be/dtpJ3pn_GmQ",
             "https://youtu.be/IO3et3Uk4mQ"
            )
 if(length(names) - length(video) > 0){
@@ -51,7 +54,7 @@ codestr <- rep("", ns)
 nid <- sapply(substr(codesas,12,13), function(x){which(x == index)})
 codestr[nid] <- paste0("[SAS](",linkgithub, "code/", codesas,")")
 
-codeR <- list.files(path = codedir, pattern = "MATH60604.*.R")
+codeR <- list.files(path = codedir, pattern = "MATH60604A.*.R")
 codeRstr <- rep("", ns)
 nid <- sapply(substr(codeR,12,13), function(x){pmatch(x, index)})
 codeRstr[nid] <- paste0("[R](",linkgithub,"code/", codeR,")")
