@@ -9,6 +9,16 @@ vignette: >
   %\VignetteIndexEntry{Detailed outline}
 ---
 
+## Week 5
+
+
+### Before class:
+
+- Video recordings: 2h-2i
+- Course notes: chapter 2 (sections 8 and 9)
+
+---
+
 ## Week 4
 
 
@@ -23,6 +33,7 @@ vignette: >
 
 ## After class:
 
+- Tests of linear hypothesis in **SAS**: [theory](https://documentation.sas.com/?docsetId=statug&docsetTarget=statug_intromod_sect043.htm&docsetVersion=14.3&locale=en), [R code](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A-linear_hypothesis_tests.R), [**SAS** code](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A-interactions.sas)
 - Exercises 2.5-2.7
 
 ---
