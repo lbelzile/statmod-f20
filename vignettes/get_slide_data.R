@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","3_")
-index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","3")
+index <- c("0_","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","2h","3_")
+index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","2h","3")
 names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
@@ -11,6 +11,7 @@ names <- c("Course Outline",
            "Coefficient of determination",
            "Predictions",
            "Interactions",
+           "Collinearity",
            "Likelihood-based inference"
            )
 ns <- length(index)
@@ -42,6 +43,7 @@ video <- c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/3rVrZDReDCk",
             "https://youtu.be/AubAJT6fSHs",
             "https://youtu.be/dtpJ3pn_GmQ",
+            "",
             "https://youtu.be/IO3et3Uk4mQ"
            )
 if(length(names) - length(video) > 0){
