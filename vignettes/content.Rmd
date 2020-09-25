@@ -33,6 +33,10 @@ source("get_slide_data.R")
 knitr::kable(sldat)
 ```
 
+## Assignments
+
+- Assignment 1 (due by October 19th): [questions](https://raw.githubusercontent.com/lbelzile/modstat/statmod/assignments/MATH60604A-Assignment1.pdf), [`diamonds` dataset](https://raw.githubusercontent.com/lbelzile/statmod/master/datasets/diamants.sas7bdat), [`power.sas`](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/power.sas)
+
 
 ## Exercises
 

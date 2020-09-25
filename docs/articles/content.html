@@ -87,7 +87,7 @@
 
       
 
-      </header><script src="content_files/header-attrs-2.3/header-attrs.js"></script><div class="row">
+      </header><script src="content_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Learning material</h1>
@@ -237,6 +237,14 @@
 </tbody>
 </table>
 </div>
+<div id="assignments" class="section level2">
+<h2 class="hasAnchor">
+<a href="#assignments" class="anchor"></a>Assignments</h2>
+<ul>
+<li>Assignment 1 (due by October 19th): <a href="https://raw.githubusercontent.com/lbelzile/modstat/statmod/assignments/MATH60604A-Assignment1.pdf">questions</a>, <a href="https://raw.githubusercontent.com/lbelzile/statmod/master/datasets/diamants.sas7bdat"><code>diamonds</code> dataset</a>, <a href="https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/power.sas"><code>power.sas</code></a>
+</li>
+</ul>
+</div>
 <div id="exercises" class="section level2">
 <h2 class="hasAnchor">
 <a href="#exercises" class="anchor"></a>Exercises</h2>
@@ -309,16 +317,20 @@
 <p><code>LIBNAME statmod "~/my_shared_file_links/u41148888/statmod" access=readonly;</code></p>
 <p>You must create a local copy to modify these data.</p>
 <p>You can also access the data sets in <strong>R</strong> by installing the <code>hecmodstat</code> package from Github using the following commands (uncomment the first line to install the <code>remotes</code> and <code>learnr</code> libraries):</p>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co">#install.packages(c("learnr","remotes"))</span>
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"lbelzile/hecstatmod"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="co">#install.packages(c("learnr","remotes"))</span>
+<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"lbelzile/hecstatmod"</span>)
+</pre></div>
 <p><em>Note</em>: not all data sets are currently documented and (most) tutorials are still missing. Please re-install the package periodically to benefit from the latest features.</p>
 </div>
 <div id="quiz" class="section level2">
 <h2 class="hasAnchor">
 <a href="#quiz" class="anchor"></a>Quiz</h2>
 <p>The <strong>R</strong> package also contain quizzes: to run the later and launch a new browser window, use the following commands (each line represents a different quiz).</p>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="kw pkg">learnr</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span>(<span class="st">"intro"</span>, <span class="kw">package</span> <span class="kw">=</span> <span class="st">"hecstatmod"</span>)
-<span class="kw pkg">learnr</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span>(<span class="st">"likelihood"</span>, <span class="kw">package</span> <span class="kw">=</span> <span class="st">"hecstatmod"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="kw">learnr</span>::<span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span>(<span class="st">"intro"</span>, package = <span class="st">"hecstatmod"</span>)
+<span class="kw">learnr</span>::<span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span>(<span class="st">"likelihood"</span>, package = <span class="st">"hecstatmod"</span>)
+</pre></div>
 </div>
   </div>
 
@@ -337,7 +349,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
