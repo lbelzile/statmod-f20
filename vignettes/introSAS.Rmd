@@ -28,13 +28,15 @@ You must create a local copy to modify these data.
 
 ### SAS® OnDemand for Academics credentials
 
-| Course Details | |
-|:----|:----|
-|Course name:	| MATH 60604A|
-|Level:|	Graduate |
-|Institution:|	HEC Montreal |
-|Course Code:|	`de87d662-6994-481b-9a3d-d50434654171`|
-|Description:|	Statistical Modelling|
+Email me for the details
+
+<!-- | Course Details | | -->
+<!-- |:----|:----| -->
+<!-- |Course name:	| MATH 60604A| -->
+<!-- |Level:|	Graduate | -->
+<!-- |Institution:|	HEC Montreal | -->
+<!-- |Course Code:|	`de87d662-6994-481b-9a3d-d50434654171`| -->
+<!-- |Description:|	Statistical Modelling| -->
 
 
 ## Installation

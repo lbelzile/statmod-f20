@@ -21,7 +21,7 @@ vignette: >
 
 - Collinearity illustration with `wages85` data
 - Graphical analysis of residuals for `college` data
-- Workshop on diagnostic plots
+- [Workshop on diagnostic plots](https://github.com/lbelzile/statmod/raw/master/workshop/graphicaldiagnostics.html)
 
 
 ---
@@ -99,7 +99,7 @@ vignette: >
 ### In class:
 
 - Presentation and practice of pedagogical tools (Zoom / Etherpad / Wooclap / SAS onDemand)
-- [Graphics workshop (group)](https://github.com/lbelzile/modstat/raw/master/atelier/graphiques/graphics.zip)
+- [Graphics workshop (group)](https://github.com/lbelzile/statmod/raw/master/workshop/graphics.zip)
 
 ### After class:
 
