@@ -17,6 +17,13 @@ vignette: >
 - Video recordings: 2h-2i
 - Course notes: chapter 2 (sections 8 and 9)
 
+### In class:
+
+- Collinearity illustration with `wages85` data
+- Graphical analysis of residuals for `college` data
+- Workshop on diagnostic plots
+
+
 ---
 
 ## Week 4

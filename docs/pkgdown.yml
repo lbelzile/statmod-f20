@@ -1,12 +1,12 @@
-pandoc: 2.7.3
-pkgdown: 1.6.1
+pandoc: 2.10.1
+pkgdown: 1.5.1
 pkgdown_sha: ~
 articles:
   content: content.html
   detailedoutline: detailedoutline.html
   introSAS: introSAS.html
   team: team.html
-last_built: 2020-09-25T23:02Z
+last_built: 2020-09-29T15:35Z
 urls:
   reference: https://lbelzile.github.io/statmod/reference
   article: https://lbelzile.github.io/statmod/articles

@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","2h","3_")
-index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","2h","3")
+index <- c("0_","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","2h","2i","3_")
+index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","2h","2i","3")
 names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
@@ -12,23 +12,24 @@ names <- c("Course Outline",
            "Predictions",
            "Interactions",
            "Collinearity",
+           "Diagnostic plots",
            "Likelihood-based inference"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
 codedir <- "../code"
 
-slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "MATH60604A_w*.html")
+slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "MATH60604A_w.*.html")
 slides <- slides[substr(slides, 1, 12) == "MATH60604A_w"]
 sl <- rep("", ns)
-pmasl <- na.omit(pmatch(index, substr(slides, start = 13, stop = 14)))
+pmasl <- na.omit(pmatch(substr(slides, start = 13, stop = 14), index))
 sl[pmasl] <- paste0("[html](",url, slides,")")
 
 
 slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "MATH60604A_w.*.pdf")
 slidespdf <- slidespdf[substr(slidespdf, 1, 12) == "MATH60604A_w"]
 slpdf <- rep("", ns)
-pmaslp <- na.omit(pmatch(index, substr(slidespdf, start = 13, stop = 14)))
+pmaslp <- na.omit(pmatch(substr(slidespdf, start = 13, stop = 14),index))
 slpdf[pmaslp] <- paste0("[pdf](",url, slidespdf,")")
 
 
@@ -43,7 +44,8 @@ video <- c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/3rVrZDReDCk",
             "https://youtu.be/AubAJT6fSHs",
             "https://youtu.be/dtpJ3pn_GmQ",
-            "",
+            "https://youtu.be/ENOVNBOdl6E",
+            "https://youtu.be/iqfr_VK520M",
             "https://youtu.be/IO3et3Uk4mQ"
            )
 if(length(names) - length(video) > 0){
