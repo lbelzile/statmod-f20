@@ -36,7 +36,7 @@ knitr::kable(sldat)
 ## Assignments
 
 - Assignment 1 (due by October 19th): [questions](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/MATH60604A-Assignment1.pdf), [`diamonds` dataset](https://raw.githubusercontent.com/lbelzile/statmod/master/datasets/diamonds.sas7bdat), [`power.sas`](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/power.sas)
-
+- [Project](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/MATH60604A_project.pdf) (due at the latest December 16th)
 
 ## Exercises
 
