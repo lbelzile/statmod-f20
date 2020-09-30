@@ -20,8 +20,8 @@ vignette: >
 ### In class:
 
 - Collinearity illustration with `wages85` data
-- Graphical analysis of residuals for `college` data
-- [Workshop on diagnostic plots](https://github.com/lbelzile/statmod/raw/master/workshop/graphicaldiagnostics.html)
+- Graphical analysis of residuals for `college` data [(code)](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A-residualanalysis.sas)
+- [Workshop on diagnostic plots](https://lbelzile.github.io/MATH60604A-slides/graphicaldiagnostics.html)
 
 
 ---
