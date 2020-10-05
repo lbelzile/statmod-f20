@@ -8,6 +8,19 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Detailed outline}
 ---
+## Week 6
+
+### Before class:
+
+- Video recordings: 4a-4c
+- Course notes: chapter 4.1-4.3
+
+### In class:
+
+- Overview of the theory of generalized linear models.
+- Example of logistic regression
+
+---
 
 ## Week 5
 
@@ -22,7 +35,6 @@ vignette: >
 - Collinearity illustration with `wages85` data
 - Graphical analysis of residuals for `college` data [(code)](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A-residualanalysis.sas)
 - [Workshop on diagnostic plots](https://lbelzile.github.io/MATH60604A-slides/graphicaldiagnostics.html)
-
 
 ---
 
