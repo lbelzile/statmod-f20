@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","2h","2i","3_")
-index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","2h","2i","3")
+index <- c("0_","1a","1b","1c", paste0(2,letters[1:9]), "3_", paste0(4,letters[1:4]))
+index0 <- c("0","1a","1b","1c", paste0(2,letters[1:9]), "3", paste0(4,letters[1:4]))
 names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
@@ -13,7 +13,11 @@ names <- c("Course Outline",
            "Interactions",
            "Collinearity",
            "Diagnostic plots",
-           "Likelihood-based inference"
+           "Likelihood-based inference",
+           "Generalized linear models",
+           "Logistic regression",
+           "Example of logistic regression",
+           "Poisson regression"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
@@ -29,8 +33,8 @@ sl[pmasl] <- paste0("[html](",url, slides,")")
 slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "MATH60604A_w.*.pdf")
 slidespdf <- slidespdf[substr(slidespdf, 1, 12) == "MATH60604A_w"]
 slpdf <- rep("", ns)
-pmaslp <- na.omit(pmatch(substr(slidespdf, start = 13, stop = 14),index))
-slpdf[pmaslp] <- paste0("[pdf](",url, slidespdf,")")
+pmaslp <- na.omit(pmatch(substr(slidespdf, start = 13, stop = 14), index))
+slpdf[pmaslp] <- paste0("[pdf](",url, slidespdf,")")[1:ns]
 
 
 video <- c("https://youtu.be/luOkCcpDSjs",
@@ -46,7 +50,11 @@ video <- c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/dtpJ3pn_GmQ",
             "https://youtu.be/ENOVNBOdl6E",
             "https://youtu.be/iqfr_VK520M",
-            "https://youtu.be/IO3et3Uk4mQ"
+            "https://youtu.be/IO3et3Uk4mQ",
+            "https://youtu.be/Ru9OXJTsToY", #4a
+            "https://youtu.be/MabdSIYexmg", #4b
+            "https://youtu.be/oGFsv1eBl6Y", #4c
+            "https://youtu.be/UeVVJvv5CZk"
            )
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
