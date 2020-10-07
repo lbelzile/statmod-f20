@@ -1,4 +1,3 @@
-
 data(intention, package = "hecstatmod")
 
 mod <- lm(intention ~ fixation + emotion + revenue + 

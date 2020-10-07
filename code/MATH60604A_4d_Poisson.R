@@ -1,14 +1,14 @@
 data(intention, package = "hecstatmod")
 # Fitting Poisson model
 form <- "nitem ~ sex + age + revenue + educ + marital + fixation + emotion"
-m2 <- glm(form, data=intention, family=poisson)
+mod <- glm(form, data=intention, family=poisson)
 # Coefficients table with Wald tests
-summary(m2)
+summary(mod)
 # Type 3 effects - likelihood ratio tests
-car::Anova(m2, 3)
+car::Anova(mod, 3)
 # Likelihood-based 95% confidence intervals for parameters
-confint(m2)
-AIC(m2); BIC(m2); deviance(m2); df.residual(m2)
+confint(mod)
+AIC(mod); BIC(mod); deviance(mod); df.residual(mod)
 # The Pearson chi-square statistic is obtained
 # by summing the Pearson residuals
-sum(residuals(m2, type = "pearson")^2)
+sum(residuals(mod, type = "pearson")^2)

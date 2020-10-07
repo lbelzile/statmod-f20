@@ -1,4 +1,5 @@
 # Fitting Poisson model
+data(intention, package = "hecstatmod")
 form <- "nitem ~ sex + age + revenue + educ + marital + fixation + emotion"
 m1 <- glm(form, data=intention, family=poisson)
 # Negative binomial regression 
