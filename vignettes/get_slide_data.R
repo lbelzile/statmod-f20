@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c", paste0(2,letters[1:9]), "3_", paste0(4,letters[1:4]))
-index0 <- c("0","1a","1b","1c", paste0(2,letters[1:9]), "3", paste0(4,letters[1:4]))
+index <- c("0_","1a","1b","1c", paste0(2,letters[1:9]), "3_", paste0(4,letters[1:8]))
+index0 <- c("0","1a","1b","1c", paste0(2,letters[1:9]), "3", paste0(4,letters[1:8]))
 names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
@@ -17,7 +17,11 @@ names <- c("Course Outline",
            "Generalized linear models",
            "Logistic regression",
            "Example of logistic regression",
-           "Poisson regression"
+           "Poisson regression",
+           "Contingency tables",
+           "Overdispersion",
+           "Rates and offsets",
+           "Logistic model for rates"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
@@ -54,7 +58,11 @@ video <- c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/Ru9OXJTsToY", #4a
             "https://youtu.be/MabdSIYexmg", #4b
             "https://youtu.be/oGFsv1eBl6Y", #4c
-            "https://youtu.be/UeVVJvv5CZk"
+            "https://youtu.be/ErqXeY4nGgk", #4d
+            "https://youtu.be/1-F5vPk7_78", #4e
+            "https://youtu.be/c5oQOIPBAeU", #4f
+            "https://youtu.be/FLSAaWpHQso", #4g
+            "https://youtu.be/pqkjnA708c8"
            )
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
