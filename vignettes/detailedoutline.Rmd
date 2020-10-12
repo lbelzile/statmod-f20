@@ -8,17 +8,34 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Detailed outline}
 ---
+
+## Week 7
+
+### Before class:
+
+- Video recordings: 4c-4f
+- Course notes: Section 4.3 (excluding 4.3.3)
+
+
+### In class:
+
+- Logistic regression with **SAS**
+- Poisson regression with **SAS**
+
+---
+
 ## Week 6
 
 ### Before class:
 
 - Video recordings: 4a-4c
-- Course notes: chapter 4.1-4.3
+- Course notes: Sections 2.10, 4.1-4.2
 
 ### In class:
 
 - Overview of the theory of generalized linear models.
-- Example of logistic regression
+- [Example of Box-Cox regression](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_BoxCox.sas)
+- Midterm survey.
 
 ---
 
