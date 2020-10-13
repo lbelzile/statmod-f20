@@ -27,3 +27,35 @@ series x=fixation y=predicted;
 yaxis label="intention score";
 xaxis label="fixation time (in seconds)";
 run;
+
+
+
+/* More realistic example with the college data */
+
+ods exclude all;
+ods noresults;
+proc glm data=statmod.college;
+class field rank sex;
+model salary = field rank service sex;
+store model1;
+run;
+
+data newcollege;
+length rank $ 10; 
+length field $ 12; 
+/* SAS troncates the variables name exceeding 8 character (default) 
+The above thus declares the categorical variable ($) "rank" of length at most 10.*/
+   input year field $ rank $ service sex $;
+   datalines;
+5 applied associate 3 man
+; 
+
+proc plm restore=model1;
+score data=newcollege out=prediction predicted lcl ucl;
+run; 
+ods exclude none;
+ods results;
+
+proc print data=prediction;
+var predicted lcl ucl;
+run;
