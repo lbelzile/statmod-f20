@@ -19,8 +19,8 @@ vignette: >
 
 ### In class:
 
-- Logistic regression with **SAS**
-- Poisson regression with **SAS**
+- [Logistic and Poisson regression with **SAS**](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_glms.sas)
+
 
 ---
 
