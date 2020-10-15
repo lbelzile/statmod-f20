@@ -1,13 +1,25 @@
 exdir <- "../exercises"
-
+linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/statmod/blob/master/exercises/"
+linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/master/"
 ## exercise and solution files
 fn <- FALSE
 ex <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]].pdf", 
     full.names = fn)
 codesas <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]].sas", 
                  full.names = fn)
+
+sas <- rep("", 7)
+sas[as.integer(substr(codesas, start = 20, stop = 20))] <- 
+  paste0("[SAS](", linkgithub, "exercises/",codesas, ")")
+
+
 coder <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]].R", 
                       full.names = fn)
+rc <- rep("",7)
+rc[as.integer(substr(coder, start = 20, stop = 20))] <- 
+  paste0("[R](", linkgithub, "exercises/", coder, ")")
+
+
 so <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]]-sol.pdf", 
     full.names = fn)
 
@@ -27,10 +39,9 @@ exdat <- data.frame(Chapter = topics)
 
 
 ## Links
-linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/statmod/blob/master/exercises/"
-linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/master/"
+
 exdat$Exercise <- c(paste0("[exercise](", linkstring, ex, ")"),rep("", length.out = 7-length(ex)))
 exdat$Solution <- c(paste0("[solution](", linkstring, so, ")"),rep("", length.out = 7-length(so)))
-exdat$`SAS` <- c(paste0("[SAS](", linkgithub, "exercises/",codesas, ")"),rep("", length.out = 7-length(codesas)))
-exdat$`R` <- c(paste0("[R](", linkgithub, "exercises/", coder, ")"),rep("", length.out = 7-length(coder)))
+exdat$`SAS` <- sas
+exdat$`R` <- rc
 

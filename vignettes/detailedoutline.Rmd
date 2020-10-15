@@ -19,7 +19,8 @@ vignette: >
 
 ### In class:
 
-- [Logistic and Poisson regression with **SAS**](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_glms.sas)
+- Review of Assignment 1
+- [Logistic regression with **SAS**](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_logistic.sas)
 
 
 ---

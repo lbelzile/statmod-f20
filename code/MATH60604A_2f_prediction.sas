@@ -50,7 +50,7 @@ The above thus declares the categorical variable ($) "rank" of length at most 10
 5 applied associate 3 man
 ; 
 
-proc plm restore=model1;
+proc plm restore=model1 alpha=0.05;
 score data=newcollege out=prediction predicted lcl ucl;
 run; 
 ods exclude none;
