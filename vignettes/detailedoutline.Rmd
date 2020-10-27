@@ -9,6 +9,14 @@ vignette: >
   %\VignetteIndexEntry{Detailed outline}
 ---
 
+## Week 8
+
+### Before class:
+
+- Video recordings: 4g-4h and 5a
+
+---
+
 ## Week 7
 
 ### Before class:
