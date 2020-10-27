@@ -1,5 +1,13 @@
-index <- c("0_","1a","1b","1c", paste0(2,letters[1:9]), "3_", paste0(4,letters[1:8]))
-index0 <- c("0","1a","1b","1c", paste0(2,letters[1:9]), "3", paste0(4,letters[1:8]))
+index <- c("0_","1a","1b","1c", 
+           paste0(2,letters[1:9]), 
+           "3_", paste0(4,letters[1:8]),
+           paste0(5, letters[1:8]),
+           paste0(6, letters[1:6]))
+index0 <- c("0","1a","1b","1c", 
+            paste0(2,letters[1:9]), 
+            "3", paste0(4,letters[1:8]),
+            paste0(5, letters[1:8]),
+            paste0(6, letters[1:6]))
 names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
@@ -21,7 +29,22 @@ names <- c("Course Outline",
            "Contingency tables",
            "Overdispersion",
            "Rates and offsets",
-           "Logistic model for rates"
+           "Logistic model for proportions",
+           "Introduction to correlated data",
+           "Example of longitudinal data",
+           "Model formulation",
+           "Compound symmetry covariance",
+           "Autoregressive covariance",
+           "Other covariance models",
+           "Selection of covariance structures",
+           "Group heteroscedasticity",
+           "Group effects",
+           "Clustered data example",
+           "Random effects",
+           "Random intercept",
+           "Random slope",
+           "Prediction for mixed models"
+           
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
@@ -41,7 +64,8 @@ pmaslp <- na.omit(pmatch(substr(slidespdf, start = 13, stop = 14), index))
 slpdf[pmaslp] <- paste0("[pdf](",url, slidespdf,")")[1:ns]
 
 
-video <- c("https://youtu.be/luOkCcpDSjs",
+video <- paste0("[videos](", 
+          c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/TSMuEX8FqYo",
             "https://youtu.be/nCUT05szKwQ",
             "https://youtu.be/5Yc46pAQpFk",
@@ -63,7 +87,7 @@ video <- c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/c5oQOIPBAeU", #4f
             "https://youtu.be/FLSAaWpHQso", #4g
             "https://youtu.be/pqkjnA708c8"
-           )
+           ), ")")
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
 }
@@ -84,6 +108,6 @@ sldat <- data.frame('S' = index0,
                     Content = names,
                     Slides = sl,
                     PDF = slpdf,
-                    Videos =  paste0("[videos](", video, ")"),
+                    Videos =  video,
                     SAS = codestr,
                     R = codeRstr)
