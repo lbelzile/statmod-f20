@@ -86,8 +86,21 @@ video <- paste0("[videos](",
             "https://youtu.be/1-F5vPk7_78", #4e
             "https://youtu.be/c5oQOIPBAeU", #4f
             "https://youtu.be/FLSAaWpHQso", #4g
-            "https://youtu.be/pqkjnA708c8",
-            "https://youtu.be/2LRzsxZPatQ"#5a
+            "https://youtu.be/pqkjnA708c8", #4h
+            "https://youtu.be/2LRzsxZPatQ", #5a
+            "https://youtu.be/MC1_W2G6Pos", #5b
+            "https://youtu.be/bl0hI-YSWDQ", #5c
+            "https://youtu.be/rhXjdr8vYzE", #5d
+            "https://youtu.be/0o2p3lLUtBo", #5e
+            "https://youtu.be/0-QR5EYnkGg", #5f
+            "https://youtu.be/_LDX9RnF7A0", #5g
+            "https://youtu.be/K2xJy2J6-ws", #5h
+            "https://youtu.be/CVpRY1LYwU8", #6a
+            "https://youtu.be/4yXP8B9mYzQ", #6b
+            "https://youtu.be/HLYSs2lxFj8", #6c
+            "https://youtu.be/oCuZajuIymk", #6d
+            "https://youtu.be/IAzgrldsY48", #6e
+            "https://youtu.be/-56kPe2FPwE" #6f
            ), ")")
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
