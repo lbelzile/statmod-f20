@@ -86,7 +86,8 @@ video <- paste0("[videos](",
             "https://youtu.be/1-F5vPk7_78", #4e
             "https://youtu.be/c5oQOIPBAeU", #4f
             "https://youtu.be/FLSAaWpHQso", #4g
-            "https://youtu.be/pqkjnA708c8"
+            "https://youtu.be/pqkjnA708c8",
+            "https://youtu.be/2LRzsxZPatQ"#5a
            ), ")")
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
