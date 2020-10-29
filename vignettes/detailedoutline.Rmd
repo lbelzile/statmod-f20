@@ -15,6 +15,13 @@ vignette: >
 
 - Video recordings: 4g-4h and 5a
 
+### In class:
+
+- Poisson/binomial analysis for `sweden`.
+- Models for contingency tables
+- Overdispersion
+- Exercise 4.3 (children ever born)
+
 ---
 
 ## Week 7

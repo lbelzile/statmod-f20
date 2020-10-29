@@ -13,7 +13,6 @@ mixed2 <- lmer(revenge ~ sex + age + vc + wom +  t +
                REML = TRUE)
 # Same as
 # nlme::lme(revenge ~ sex + age + vc + wom  +  t, random = ~ 1+t | id, data = revenge)
-# SAS gives different values for the covariance parameters!
 
 # Are the slope and intercept correlated?
 anova(mixed2, mixed1)
