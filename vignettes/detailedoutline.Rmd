@@ -17,10 +17,10 @@ vignette: >
 
 ### In class:
 
-- Poisson/binomial analysis for `sweden`.
-- Models for contingency tables
-- Overdispersion
-- Exercise 4.3 (children ever born)
+- [Poisson/binomial analysis for `sweden`](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_Poisson.sas).
+- [Models for contingency tables (not covered)](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_contingencytable.sas)
+- Rates - Exercise 4.3 (children ever born)
+- Overdispersion - with slides (see Exercise 4.4 for an example)
 
 ---
 
