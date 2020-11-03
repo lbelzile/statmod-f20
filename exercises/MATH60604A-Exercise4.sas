@@ -74,8 +74,45 @@ class res(ref="1") dur(ref="1") educ(ref="1");
 model nceb = res dur educ dur*educ / 
 	offset=lognwom dist=poisson link=log type3;
 run;
+ /* Exercice 4.4 */
+proc genmod data=statmod.bixi;
+class weekend;
+model nusers = weekend / type3 dist=poisson link=log;
+run;
 
-/* Exercise 4.4 */
+proc genmod data=statmod.bixi;
+class weekend;
+model nusers = temp relhumid weekend / type3 dist=poisson link=log;
+run;
+
+data pval;
+pval = 1-CDF("chisq", 2726.9674- 1954.0018, 2);
+run;
+proc print data=pval;
+var pval;
+run;
+
+proc genmod data=statmod.bixi;
+class weekend;
+model nusers = temp relhumid weekend / type3 dist=negbin link=log;
+run;
+
+proc genmod data=statmod.bixi;
+class weekday;
+model nusers = temp relhumid weekday / type3 dist=negbin link=log;
+run;
+
+/* Comparison of the model with a binary indicator per day and week-end
+Likelihood ratio test */
+data pval;
+pval = 1-CDF("chisq", 522.3013 - 521.9627, 496-491);
+run;
+proc print data=pval;
+var pval;
+run;
+
+
+/* Exercise 4.5 */
 data cancer;
 set statmod.cancer;
 total = no + yes;
@@ -99,7 +136,7 @@ model yes/total = malignant /
  dist=binomial link=logit type1;
 run;
 
-/* Exercise 4.5 */
+/* Exercise 4.6 */
 
 data smoking;
 set statmod.smoking;

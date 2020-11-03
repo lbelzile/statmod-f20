@@ -8,6 +8,14 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Detailed outline}
 ---
+## Week 9
+
+### Before class:
+
+- Video recordings: 5b-5f
+
+
+---
 
 ## Week 8
 

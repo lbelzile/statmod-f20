@@ -38,14 +38,15 @@ In this section you can find the links to all videos individually as well as the
 
 ```{r, echo=FALSE, eval=TRUE, message=FALSE}
 source("get_slide_data.R")
-knitr::kable(sldat)
+knitr::kable(sldat, align = "llccccc")
 ```
 
 ## Exercises
 
 ```{r, echo=FALSE, eval=TRUE, message=FALSE}
 source("get_exercise_data.R")
-knitr::kable(exdat, row.names = FALSE)
+row.names(exdat) <- 1:7
+knitr::kable(exdat, row.names = TRUE, align = "lcccc")
 ```
 
 
@@ -59,7 +60,7 @@ To access the course database, you can also add the following code snipett at th
 
 You must create a local copy to modify these data.
 
-You can also access the data sets in **R** by installing the `hecmodstat` package from Github using the following commands (uncomment the first line to install the  `remotes` and `learnr` libraries):
+You can also access the data sets in **R** by installing the `hecstatmod` package from Github using the following commands (uncomment the first line to install the  `remotes` and `learnr` libraries - do only once):
 
 ```{r, eval = FALSE}
 #install.packages(c("learnr","remotes"))

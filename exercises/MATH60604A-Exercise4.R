@@ -90,6 +90,25 @@ anova(mod3p1, mod3p3, test = "LRT")
 ###############################
 #######  Exercise 4.4  ########
 ###############################
+data(bixi, package = "hecstatmod")
+
+mod4p1 <- glm(nusers ~ weekend, data = bixi, family = poisson(link="log")) 
+mod4p2 <- glm(nusers ~ weekend + temp + relhumid, data = bixi, family = poisson(link="log")) 
+anova(mod4p1, mod4p2)
+
+mod4p3 <- MASS::glm.nb(nusers ~ weekend + temp + relhumid, data = bixi)
+# Overdispersion
+# Likelihood ratio test: compare neg. binom (Ha) versus Poisson (H0)
+# Null distribution is 0.5 chi-square(1). This means we proceed as usual, but halve the p-value
+pchisq(q = as.numeric(2*(logLik(mod4p3) - logLik(mod4p2))), df = 1, lower.tail = FALSE)/2
+# Rejette H0: Modèle Poisson n'est pas une "simplification adéquate" du modèle binom nég
+mod4p4 <- MASS::glm.nb(nusers ~ factor(weekday) + temp + relhumid, data = bixi)
+# Compare model with daily effect (Ha) versus model with we/weekdays (H0)
+anova(mod4p4, mod4p3)
+
+###############################
+#######  Exercice 4.5  ########
+###############################
 
 # Data from Bishop, Y. M. M. ; Fienberg, S. E. and Holland, P. W. (1975) 
 # Discrete Multivariate Analysis: Theory and Practice. MIT Press, Cambridge
@@ -135,7 +154,7 @@ deviance(cancer.m2) / (nrow(cancer) - length(coef(cancer.m2)))
 pchisq(deviance(cancer.m2), df = nrow(cancer) - length(coef(cancer.m2)), lower.tail = FALSE)
 
 ###############################
-#######  Exercise 4.5  ########
+#######  Exercise 4.6  ########
 ###############################
 data(smoking, package = "hecstatmod")
 smoking.p.m0 <- glm(dead ~ offset(log(pop)), family = poisson, data = smoking)

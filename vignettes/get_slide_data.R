@@ -12,10 +12,10 @@ names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
            "Exploratory Data Analysis",
-           "Parameter interpretation (linear model)",
+           "Parameter interpretation",
            "Linear transformations",
            "Geometry of least squares",
-           "Hypothesis tests (linear model)",
+           "Hypothesis tests",
            "Coefficient of determination",
            "Predictions",
            "Interactions",
@@ -54,17 +54,17 @@ slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A
 slides <- slides[substr(slides, 1, 12) == "MATH60604A_w"]
 sl <- rep("", ns)
 pmasl <- na.omit(pmatch(substr(slides, start = 13, stop = 14), index))
-sl[pmasl] <- paste0("[html](",url, slides,")")
+sl[pmasl] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-desktop fa-lg'></i></span>](",url, slides,")")
 
 
 slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604A-slides", pattern = "MATH60604A_w.*.pdf")
 slidespdf <- slidespdf[substr(slidespdf, 1, 12) == "MATH60604A_w"]
 slpdf <- rep("", ns)
 pmaslp <- na.omit(pmatch(substr(slidespdf, start = 13, stop = 14), index))
-slpdf[pmaslp] <- paste0("[pdf](",url, slidespdf,")")[1:ns]
+slpdf[pmaslp] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](",url, slidespdf,")")[1:ns]
 
 
-video <- paste0("[videos](", 
+video <- paste0("[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](", 
           c("https://youtu.be/luOkCcpDSjs",
             "https://youtu.be/TSMuEX8FqYo",
             "https://youtu.be/nCUT05szKwQ",
@@ -110,12 +110,12 @@ linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/master/"
 codesas <- list.files(path = codedir, pattern = "MATH60604A.*.sas")
 codestr <- rep("", ns)
 nid <- sapply(substr(codesas,12,13), function(x){which(x == index)})
-codestr[nid] <- paste0("[SAS](",linkgithub, "code/", codesas,")")
+codestr[nid] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](",linkgithub, "code/", codesas,")")
 
 codeR <- list.files(path = codedir, pattern = "MATH60604A.*.R")
 codeRstr <- rep("", ns)
 nid <- sapply(substr(codeR,12,13), function(x){pmatch(x, index)})
-codeRstr[nid] <- paste0("[R](",linkgithub,"code/", codeR,")")
+codeRstr[nid] <- paste0("[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](",linkgithub,"code/", codeR,")")
 
 
 sldat <- data.frame('S' = index0, 
