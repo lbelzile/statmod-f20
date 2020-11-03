@@ -21,6 +21,10 @@ source("get_slide_data.R")
 knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.names = FALSE)
 ```
 
+## In class:
+
+- Analysis of chick growth curves
+
 ---
 
 ## Week 11
@@ -33,7 +37,8 @@ knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc",
 
 ## In class:
 
-- Analysis of chick growth curves
+- Theory review
+- Models for CD4 counts
 
 ---
 
@@ -45,6 +50,7 @@ knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc",
 knitr::kable(sldat[which(sldat$S %in% c("5g","5h","6a")),-3], align = "llccccc", row.names = FALSE)
 ```
 
+- ANOVA with unequal variance
 ---
 
 ## Week 9
@@ -54,6 +60,11 @@ knitr::kable(sldat[which(sldat$S %in% c("5g","5h","6a")),-3], align = "llccccc",
 ```{r, echo = FALSE}
 knitr::kable(sldat[which(sldat$S %in% c("5b","5c","5d","5e","5f")),-3], align = "llccccc", row.names = FALSE)
 ```
+
+### In class:
+
+- Examples of longitudinal data
+- Discussion of relations between different covariance models
 
 ---
 
@@ -135,8 +146,6 @@ knitr::kable(sldat[which(sldat$S %in% c("2h","2i")),], align = "llccccc", row.na
 ```{r, echo = FALSE}
 knitr::kable(sldat[which(sldat$S %in% c("2e","2f","2g")),-3], align = "llccccc", row.names = FALSE)
 ```
-
-- Video recordings: 2e-2g
 - Course notes: chapter 2 (section 5-7)
 
 ### In class:
@@ -177,8 +186,7 @@ knitr::kable(sldat[which(sldat$S %in% c("2d","3")),-3], align = "llccccc", row.n
 
 ### Before class:
 
-
-- Video recordings: 2a, 2b, 2c
+Recording 2c is optional
 ```{r, echo = FALSE}
 knitr::kable(sldat[which(sldat$S %in% c("2a","2b","2c")),], align = "llccccc", row.names = FALSE)
 ```
@@ -201,10 +209,11 @@ knitr::kable(sldat[which(sldat$S %in% c("2a","2b","2c")),], align = "llccccc", r
 
 ### Before class:
 
-- Video recordings: 
+ 
 ```{r, echo = FALSE}
 knitr::kable(sldat[which(sldat$S %in% c("0","1a","1b","1c")),], align = "llccccc", row.names = FALSE)
 ```
+
 - Course notes: chapter 1 and Appendix A
 - Create an account on **SAS** onDemand 
 - Complete the [Introduction to **SAS**](https://lbelzile.github.io/statmod/articles/introSAS.html)
