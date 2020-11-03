@@ -8,12 +8,52 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Detailed outline}
 ---
+
+```{r, echo = FALSE,eval = TRUE}
+source("get_slide_data.R")
+```
+
+## Week 12
+
+### Before class:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.names = FALSE)
+```
+
+---
+
+## Week 11
+
+### Before class:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc", row.names = FALSE)
+```
+
+## In class:
+
+- Analysis of chick growth curves
+
+---
+
+## Week 10
+
+### Before class:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("5g","5h","6a")),-3], align = "llccccc", row.names = FALSE)
+```
+
+---
+
 ## Week 9
 
 ### Before class:
 
-- Video recordings: 5b-5f
-
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("5b","5c","5d","5e","5f")),-3], align = "llccccc", row.names = FALSE)
+```
 
 ---
 
@@ -21,14 +61,16 @@ vignette: >
 
 ### Before class:
 
-- Video recordings: 4g-4h and 5a
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("4g","4h","5a")),-3], align = "llccccc", row.names = FALSE)
+```
 
 ### In class:
 
 - [Poisson/binomial analysis for `sweden`](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_Poisson.sas).
 - [Models for contingency tables (not covered)](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_contingencytable.sas)
 - Rates - Exercise 4.3 (children ever born)
-- Overdispersion - with slides (see Exercise 4.4 for an example)
+- Overdispersion - slides (see Exercise 4.4 for an example)
 
 ---
 
@@ -36,7 +78,9 @@ vignette: >
 
 ### Before class:
 
-- Video recordings: 4c-4f
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("4d","4e","4f")),-3], align = "llccccc", row.names = FALSE)
+```
 - Course notes: Section 4.3 (excluding 4.3.3)
 
 
@@ -52,7 +96,9 @@ vignette: >
 
 ### Before class:
 
-- Video recordings: 4a-4c
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("4a","4b","4c")),-3], align = "llccccc", row.names = FALSE)
+```
 - Course notes: Sections 2.10, 4.1-4.2
 
 ### In class:
@@ -68,7 +114,9 @@ vignette: >
 
 ### Before class:
 
-- Video recordings: 2h-2i
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("2h","2i")),], align = "llccccc", row.names = FALSE)
+```
 - Course notes: chapter 2 (sections 8 and 9)
 
 ### In class:
@@ -83,6 +131,10 @@ vignette: >
 
 
 ### Before class:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("2e","2f","2g")),-3], align = "llccccc", row.names = FALSE)
+```
 
 - Video recordings: 2e-2g
 - Course notes: chapter 2 (section 5-7)
@@ -103,7 +155,9 @@ vignette: >
 
 ### Before class:
 
-- Video recordings: 2d, 3a
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("2d","3")),-3], align = "llccccc", row.names = FALSE)
+```
 - Course notes: chapter 3, chapter 2 (section 4)
 
 ### In class:
@@ -125,6 +179,9 @@ vignette: >
 
 
 - Video recordings: 2a, 2b, 2c
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("2a","2b","2c")),], align = "llccccc", row.names = FALSE)
+```
 - Course notes: chapter 2 (sections 1-3)
 
 ### In class
@@ -144,7 +201,10 @@ vignette: >
 
 ### Before class:
 
-- Video recordings: 0, 1a, 1b, 1c
+- Video recordings: 
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("0","1a","1b","1c")),], align = "llccccc", row.names = FALSE)
+```
 - Course notes: chapter 1 and Appendix A
 - Create an account on **SAS** onDemand 
 - Complete the [Introduction to **SAS**](https://lbelzile.github.io/statmod/articles/introSAS.html)
