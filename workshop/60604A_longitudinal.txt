@@ -1,4 +1,4 @@
-/Pick one of the following datasets, depending on your team number
+Pick one of the following datasets, depending on your team number
 
 1) pigweight
 2) beattheblues
@@ -6,6 +6,7 @@
 4) rats
 5) tolerance
 6) fev1
+7) renergie
 
 Answer the following question
 
