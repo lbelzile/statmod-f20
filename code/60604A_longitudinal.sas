@@ -120,37 +120,10 @@ datalines;
 
 ods graphics /reset;
 
-/* Create discrete data map for attributes:  
-   https://blogs.sas.com/content/graphicallyspeaking/2016/09/13/legend-order-and-group-attributes/ */
-data Order;
-   input Value $ n;
-   retain ID 'Treat' Show 'AttrMap';
-   FillStyle        = cats('GraphData', n);
-   LineStyle        = cats('GraphData', n);
-   MarkerStyle      = cats('GraphData', n);
-   datalines;
-A 2
-P 1
-;
-
-/* Use PROC GLM to perform analysis of response profiles on the TLC data */
-
-/* Plot means vs discrete time periods:  
-   https://blogs.sas.com/content/iml/2019/10/07/graph-means-vs-time.html
-*/
-/* For information about the LEGENDITEM statement, see
-   https://blogs.sas.com/content/iml/2018/02/12/merged-legends.html 
-*/
-
 title "Response Profiles of Children Exposed to Lead";
 /* Spaghetti plot of the 100 response profiles */
-proc sgplot data=tlc dattrmap=Order;
-   series x=Time y=Y / group=ID groupLC=Treatment break lineattrs=(pattern=solid)
-                       attrid=Treat;
-   /* LEGENDITEM is a SAS 9.4M5 feature. Delete the following statements in older versions of SAS */
-   legenditem type=line name="P" / label="Placebo (P)" lineattrs=GraphData1; 
-   legenditem type=line name="A" / label="Succimer (A)" lineattrs=GraphData2; 
-   keylegend "A" "P";
+proc sgplot data=tlc;
+   series x=Time y=Y / group=ID groupLC=Treatment lineattrs=(pattern=solid);
    xaxis values=(0 1 4 6) grid;
 run;
 
