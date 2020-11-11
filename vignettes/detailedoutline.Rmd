@@ -50,8 +50,10 @@ knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc",
 knitr::kable(sldat[which(sldat$S %in% c("5g","5h","6a")),-3], align = "llccccc", row.names = FALSE)
 ```
 
-- Discussion of relations between different covariance models
-- ANOVA with unequal variance
+- Restricted estimation maximum likelihood
+- Tree of [different covariance models](https://raw.githubusercontent.com/lbelzile/statmod/master/workshop/SAS_PROC_mixed_covmodels.pdf)
+- [AR(1) model with irregular time steps](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_longitudinal.sas)
+- [ANOVA with unequal variance](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_ANOVA_unequal_var.sas)
 
 ---
 
