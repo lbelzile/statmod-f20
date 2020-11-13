@@ -128,7 +128,7 @@ proc sgplot data=tlc;
 run;
 
 /* Response-profile analysis, with an AR(1) structure */
-proc mixed data=TLCView;
+proc mixed data=tlc;
    class id Time(ref='0') Treatment(ref='P');
    model y = Treatment Time Treatment*Time / s chisq outpred=MixedOut;
    repeated Time / type=sp(pow)(Time) subject=id r rcorr=1;   /* measurements are repeated for subjects */
