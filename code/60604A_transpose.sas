@@ -61,8 +61,8 @@ set beattheblues;
    bdi=bdi0; month=0; t=1; output;
    bdi=bdi2; month=2; t=2; output;
    bdi=bdi4; month=4; t=3; output;
-   bdi=bdi6; month=8; t=4; output;
-   bdi=bdi8; month=10; t=5; output;
+   bdi=bdi6; month=6; t=4; output;
+   bdi=bdi8; month=8; t=5; output;
    drop bdi0 bdi2 bdi4 bdi6 bdi8;
 run;
 

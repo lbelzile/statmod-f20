@@ -37,8 +37,11 @@ knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc",
 
 ## In class:
 
-- Theory review
-- Models for CD4 counts
+- [Workshop: models for CD4 counts](https://raw.githubusercontent.com/lbelzile/statmod/master/workshop/MATH60604A-Workshop_cd4counts.pdf)
+
+## After class: 
+
+- [Nested versus crossed effects (optional reading)](https://errickson.net/stats-notes/vizrandomeffects.html)
 
 ---
 
