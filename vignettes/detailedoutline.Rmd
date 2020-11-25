@@ -21,14 +21,14 @@ source("get_slide_data.R")
 knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.names = FALSE)
 ```
 
-## In class:
+### In class:
 
 - **SAS** demo: random slope
   - Analysis of chick growth curves
 - [Partial pooling (blog post)](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/)
 
 
-## After class: 
+### After class: 
 
 - [Nested versus crossed effects (optional reading)](https://errickson.net/stats-notes/vizrandomeffects.html)
 
@@ -42,7 +42,7 @@ knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.
 knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc", row.names = FALSE)
 ```
 
-## In class:
+### In class:
 
 - Theoretical review of mixed models
 - [Workshop: models for CD4 counts](https://raw.githubusercontent.com/lbelzile/statmod/master/workshop/MATH60604A-workshop_cd4counts.pdf)
