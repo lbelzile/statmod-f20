@@ -25,6 +25,7 @@ knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.
 
 - **SAS** demo: random slope
   - Analysis of chick growth curves
+  - [Workshop: CD4 counts](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_workshop_cd4.sas)
 - [Partial pooling (blog post)](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/)
 
 
