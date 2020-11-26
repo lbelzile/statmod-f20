@@ -33,6 +33,15 @@ rescov <- function(model, data) {
 }
 # Print the covariance matrix of the nested models
 rc3 <- rescov(mod3, chicken)
+# Plot the correlation matrix
 image(cov2cor(rc3), sub = "", xlab = "", ylab = "")
 
+### Example with motivation data
+# Why shouldn't we put a random effect for sex?
+data(motivation, package = "hecstatmod")
+mod1 <- lme4::lmer(motiv ~ yrserv + agemanager + nunit + (1 | sex) + (1 | idunit),
+                   data = motivation)
 
+# Plot the correlation matrix of the nested models
+image(cov2cor(rescov(mod1, motivation)), sub = "", xlab = "", ylab = "")
+# The resulting covariance matrix is dense... such models do not scale in high dimension
