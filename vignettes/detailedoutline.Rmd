@@ -23,10 +23,11 @@ knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.
 
 ### In class:
 
-- **SAS** demo: random slope
-  - Analysis of chick growth curves
-  - [Workshop: CD4 counts](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_workshop_cd4.sas)
-- [Partial pooling (blog post)](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/)
+- Theoretical review 
+  - conditional and marginal predictions
+  - nested random effects
+  - [partial pooling (blog post)](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/)
+- Analysis of chick growth curves: [SAS](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_random_slope.sas) and [R code](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604A_random_slope.R)
 
 
 ### After class: 
@@ -46,6 +47,9 @@ knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc",
 ### In class:
 
 - Theoretical review of mixed models
+  - marginal versus conditional mean
+  - model equation
+  - REML versus ML (model comparison)
 - [Workshop: models for CD4 counts](https://raw.githubusercontent.com/lbelzile/statmod/master/workshop/MATH60604A-workshop_cd4counts.pdf)
 
 ---
