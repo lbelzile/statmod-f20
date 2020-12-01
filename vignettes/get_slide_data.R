@@ -2,12 +2,14 @@ index <- c("0_","1a","1b","1c",
            paste0(2,letters[1:9]), 
            "3_", paste0(4,letters[1:8]),
            paste0(5, letters[1:8]),
-           paste0(6, letters[1:6]))
+           paste0(6, letters[1:6]),
+           paste0(7, letters[1:5]))
 index0 <- c("0","1a","1b","1c", 
             paste0(2,letters[1:9]), 
             "3", paste0(4,letters[1:8]),
             paste0(5, letters[1:8]),
-            paste0(6, letters[1:6]))
+            paste0(6, letters[1:6]),
+            paste0(7, letters[1:5]))
 names <- c("Course Outline",
            "Hypothesis Tests",
            "Central Limit Theorem",
@@ -43,8 +45,12 @@ names <- c("Course Outline",
            "Random effects",
            "Random intercept",
            "Random slope",
-           "Prediction for mixed models"
-           
+           "Prediction for mixed models",
+           "Survival analysis and censoring",
+           "Likelihood for survival data",
+           "Kaplan-Meier estimator",
+           "Cox proportional hazard model",
+           "Log rank test"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
@@ -100,7 +106,12 @@ video <- paste0("[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i>
             "https://youtu.be/HLYSs2lxFj8", #6c
             "https://youtu.be/oCuZajuIymk", #6d
             "https://youtu.be/IAzgrldsY48", #6e
-            "https://youtu.be/-56kPe2FPwE" #6f
+            "https://youtu.be/-56kPe2FPwE", #6f
+            "https://youtu.be/zs1LrAyHcco", #7a
+            "https://youtu.be/-iQKIhUi65U", #7b
+            "https://youtu.be/gpJY8JQhn6A", #7c
+            "https://youtu.be/k6IUg3n0tiw", #7d
+            "https://youtu.be/FK6Zr0MwhPs" #7e 
            ), ")")
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
