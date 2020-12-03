@@ -13,6 +13,7 @@ kapm1 <- survfit(Surv(time, death) ~ 1,
                 conf.type="log", data = breastcancer)
 
 summary(kapm1)
+print(kapm1, print.rmean=TRUE)
 plot(kapm1, ylab = "survival function", xlab = "time (in days)") 
 ggsurvplot(fit = kapm1,
            conf.int = TRUE, 
@@ -27,3 +28,5 @@ kapm2 <- survfit(Surv(duration, delta) ~ 1,
                 conf.type="log", data = breastfeeding)
 
 plot(kapm2, ylab = "survival function", xlab = "time (in weeks)") 
+quantile(kapm2)
+print(kapm2, print.rmean=TRUE)
