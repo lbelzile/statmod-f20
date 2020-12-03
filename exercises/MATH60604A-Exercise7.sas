@@ -5,7 +5,7 @@ strata smoke;
 run;
 
 proc phreg data=statmod.breastfeeding;
-model duration*delta(0) =  poverty smoke yschool / ties=exact;
+model duration*delta(0) =  poverty smoke yschool agemth / ties=exact;
 run;
 
 
