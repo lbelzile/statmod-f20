@@ -4,6 +4,10 @@ time duration*delta(0);
 strata smoke;
 run;
 
+/* Note: if we use phreg to get the log rank (score) test, the results are slightly different
+this is due to the presence of ties
+*/
+
 proc phreg data=statmod.breastfeeding;
 model duration*delta(0) =  poverty smoke yschool agemth / ties=exact;
 run;
