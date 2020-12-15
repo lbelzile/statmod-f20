@@ -27,7 +27,7 @@ readers have access to course notes, sample code, online quizzes and exercises.
 
 ## Assignments
 
-- Assignment 1 (due by October 19th): [questions](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/MATH60604A-Assignment1.pdf), [`diamonds` dataset](https://raw.githubusercontent.com/lbelzile/statmod/master/datasets/diamonds.sas7bdat), [`power.sas`](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/power.sas)
+- [Assignment 1](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/MATH60604A-Assignment1.pdf) (due by October 19th): [`power.sas` script](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/power.sas)
 - Assignment 2 (due by November 16th): [questions](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/MATH60604A-Assignment2.pdf)
 - Assignment 3 (due by December 11nd): [questions](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/MATH60604A-Assignment3.pdf)
 - [Project](https://raw.githubusercontent.com/lbelzile/statmod/master/assignments/MATH60604A_project.pdf) (due at the latest December 16th)

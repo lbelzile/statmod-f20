@@ -120,8 +120,8 @@ run;
 
 data insurance;
 set statmod.insurance;
-if (obese=1 & smoker=1) then smobese=1; 
-else if (obese=0 & smoker=1) then smobese=2; 
+if (obese=1 & smoker="yes") then smobese=1; 
+else if (obese=0 & smoker="yes") then smobese=2; 
 else smobese=3;
 run;
 

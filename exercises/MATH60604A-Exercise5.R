@@ -48,6 +48,59 @@ likH1 <- sum(sapply(1:17, function(i){
                    correlation = corAR1(form=~1 | date)))}))
 pchisq(2*as.numeric(likH0-likH1), df = 32, lower.tail = FALSE)
 
+
+
+# Exercise 5.2
+data(baumann, package = "hecstatmod")
+# Cast factor and create ID variable
+baumann$id <- factor(1:nrow(baumann))
+# Long format
+baumann_long <- tidyr::pivot_longer(data = baumann, 
+                                    cols = c("mpre","mpost"),
+                                    names_to = "test",
+                                    names_prefix = "m",
+                                    values_to = "score")
+
+# Cast factors
+baumann_long$test <- factor(baumann_long$test)
+baumann$dpp <- baumann$mpost - baumann$mpre
+# Preliminary ANOVA - check equality of mean pre-intervention
+anova(lm(mpre ~ group, data = baumann))
+
+# Two competing models (one way ANOVA and linear model)
+model1 <- lm(dpp ~ group, data = baumann)
+car::Anova(model1, type = 3)
+model2 <- lm(mpost ~ group + mpre, data = baumann)
+# Test for significance using the confidence interval
+confint(modele2)["mpre",]
+
+
+library(nlme)
+model3 <- gls(score ~ group*test, 
+              data = baumann_long,
+              correlation = nlme::corSymm(form = ~ 1 | id))
+model4 <- gls(score ~ group*test, 
+              data = baumann_long,
+              correlation = nlme::corSymm(form = ~ 1 | id),
+              weights = varIdent(form=~1|test))
+#Likelihood ratio test comparing model 3 and 4 (test of heteroscedasticity)
+anova(model3, model4)
+#Covariance matrix of block
+getVarCov(model4)
+
+# We can fit different parameters in each group to compare Model 3
+ll <- rep(0,3)
+for(i in 1:3){
+  ll[i] <- logLik(gls(score ~ test,
+                      data = baumann_long,
+                      subset = which(baumann_long$group == levels(baumann_long$group)[i]),
+                      correlation = corSymm(form = ~ 1 | id)))
+}
+pchisq(sum(ll) - as.vector(logLik(model3)), df = 4, lower.tail = FALSE)
+
+#Finally, check the effect of the teaching method
+summary(model4)
+car::Anova(model4, type = 3)[4,]
 # Exercise 5.3
 
 data(tolerance, package = "hecstatmod")
@@ -62,11 +115,16 @@ g2 <- ggplot(data = tolerance) +
 g3 <- ggplot(data = tolerance) + 
   geom_boxplot(aes(y = tolerance, x = factor(age))) + 
   xlab("age (in years)")
-g1 + g2 + g3
 
+# To save to pdf, use the following argument
+# pdf("E5p3-tolerance_eda.pdf", width = 8, height = 3)
+g1 + g2 + g3
+dev.off()
+
+# pdf("E5p3-tolerance_spagh.pdf", width = 8, height = 5)
 ggplot(data = tolerance, aes(x = age, y = tolerance, group = id, color=id)) +
   geom_line() + theme(legend.position="none")
-
+dev.off()
 ## Base R plots
 # par(mfrow = c(1,3), mar = c(4,4,0.5,0.5), bty = "l")
 # boxplot(tolerance ~ sex, data = tolerance)

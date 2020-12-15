@@ -83,5 +83,3 @@ sapply(c(0.9, 0.95, 0.99),
             subset = smoker == "yes",
             alternative = "less",
             conf.level=level)$conf.int[2])})
-
-

@@ -45,6 +45,64 @@ run;
 
 
 
+/* Exercise 5.2 */
+/* Pre-process data*/
+data baumann; 
+set statmod.baumann;
+dpp = mpost-mpre;
+id = _N_;
+run;
+
+/* Transform from wide to long format */
+proc transpose data=baumann out = baumann_long(rename=(col1=score)) name = test;
+var mpre mpost;
+by group id;
+run;
+
+/* Pre-test run by Baumann et al. */
+proc glm data=baumann;
+class group(ref="DR");
+model mpre = group;
+means group / hovtest welch;
+lsmeans group / diff=all adjust=t;
+run;
+
+/* Model 5.2.1 */
+proc mixed data=baumann;
+class group(ref="DR");
+model dpp = group / solution;
+run;
+
+/* Model 5.2.2 */
+proc mixed data=baumann;
+class group(ref="DR");
+model mpost = group mpre / cl solution;
+run;
+
+
+/* Model 5.2.3 */
+proc mixed data=baumann_long method=reml;
+class id test group(ref="DR");
+model score = group test group*test / solution;
+repeated test / subject=id type=cs;
+run;
+
+/* Model 5.2.4 */
+proc mixed data=baumann_long method=reml;
+class id test group(ref="DR");
+model score = group test group*test / solution;
+repeated test / subject=id type=un;
+run;
+
+
+/* Model 5.2.5 */
+proc mixed data=baumann_long method=reml;
+class id test group(ref="DR");
+model score = group test group*test / solution;
+repeated test / group=group subject=id type=cs;
+run;
+
+
 /* Exercise 5.3 */
 /* Descriptive statistics */
 proc means data=statmod.tolerance(where=(age=11));

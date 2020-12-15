@@ -113,6 +113,120 @@ run;
 
 
 /* Exercise 4.5 */
+
+proc genmod data=statmod.socceragg;
+class home away;
+model counts= home away / dist=poisson link=log;
+run;
+
+data pval;
+pval = 1-cdf("chisq", 43.8008, 36);
+run;
+
+proc print data=pval;
+var pval;
+run;
+
+
+proc genmod data=statmod.soccer;
+class team opponent;
+model score = team opponent home / lrci type3 dist=poisson link=log;
+store model_store;
+run;
+
+data newmatch;
+length opponent $25;
+length team $25;
+infile datalines delimiter=",";
+input  home team opponent;
+datalines;
+1, Manchester United, Liverpool
+0, Liverpool, Manchester United
+;
+run;
+
+proc plm source=model_store;
+score data=newmatch out=pred pred=pred / ilink;
+run;
+
+proc print data=pred;
+var pred;
+run;
+proc genmod data=statmod.soccer;
+class team opponent;
+model score = team opponent home home*team home*opponent / type3 dist=poisson link=log;
+run;
+
+data pval;
+pval = 1-cdf("chisq", 2*(1082.6660-1058.7364), 720-682);
+run;
+
+proc print data=pval;
+var pval;
+run;
+
+/* Exercise 4.6 */
+data buch;
+set statmod.buchanan(keep=buch totmb popn);
+tot = buch + totmb;
+buchp = buch/(buch + totmb);
+lnpopn = log(popn);
+run;
+
+proc means data=buch;
+var buchp;
+run;
+
+proc means data=buch sum;
+var buch tot;
+run;
+
+proc sgplot data=buch;
+scatter x=lnpopn y=buchp;
+xaxis label="log of county population";
+yaxis label="percentage of ballots cast for Buchanan";
+run;
+
+data buchanan;
+set statmod.buchanan;
+lnhisp = log(hisp);
+lncoll = log(coll);
+if(county="Palm Beach") then bucha=.; else bucha=buch;
+lntotmb = log(totmb);
+run;
+
+proc genmod data=buchanan;
+model bucha = white lnhisp geq65 highsc lncoll income / offset=lntotmb dist=pois link=log;
+run; 
+
+proc genmod data=buchanan;
+model bucha = white lnhisp geq65 highsc lncoll income / offset=lntotmb dist=negbin link=log;
+store model_store;		
+run; 
+
+data pval;
+pval = (1-cdf("chisq", 2*(536.1785-328.8532), 1))/2;
+run;
+
+proc print data=pval;
+var pval;
+run;
+
+proc plm source=model_store;
+score data=buchanan out=preds pred=pred lclm=lower uclm=upper / ilink;
+run;
+
+data preds;
+set preds(where=(county="Palm Beach"));
+keep county pred lower upper;
+run;
+
+proc print data=preds;
+var county pred lower upper;
+run;
+
+
+/* Exercise 4.7 */
 data cancer;
 set statmod.cancer;
 total = no + yes;
@@ -136,7 +250,7 @@ model yes/total = malignant /
  dist=binomial link=logit type1;
 run;
 
-/* Exercise 4.6 */
+/* Exercise 4.8 */
 
 data smoking;
 set statmod.smoking;
