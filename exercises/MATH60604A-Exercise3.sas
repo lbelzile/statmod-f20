@@ -23,7 +23,7 @@ saleso = log(5/4)*sales;
 run;
 
 proc genmod data=sales;
-model ncustomer= sales / dist=poisson link=log;
+model ncustomer= sales / dist=poisson link=log covb itprint;
 run;
 
 proc genmod  data=saleso;
