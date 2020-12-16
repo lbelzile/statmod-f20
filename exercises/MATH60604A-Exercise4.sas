@@ -69,6 +69,13 @@ proc univariate data=residceb noprint;
 qqplot devres;
 run;
 
+
+proc genmod data=ceb;
+class res(ref="1") dur(ref="1") educ(ref="1");
+model nceb = res dur educ / 
+	offset=lognwom dist=poisson link=log type3;
+run;
+
 proc genmod data=ceb;
 class res(ref="1") dur(ref="1") educ(ref="1");
 model nceb = res dur educ dur*educ / 
@@ -86,7 +93,7 @@ model nusers = temp relhumid weekend / type3 dist=poisson link=log;
 run;
 
 data pval;
-pval = 1-CDF("chisq", 2726.9674- 1954.0018, 2);
+pval = 1-CDF("chisq", 2726.9674 - 1954.0018, 2);
 run;
 proc print data=pval;
 var pval;
