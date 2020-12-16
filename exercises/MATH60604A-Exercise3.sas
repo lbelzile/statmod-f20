@@ -1,4 +1,4 @@
-/* Question 3.4 */
+/* Question 3.3 */
 data sales;
 input ncustomer sales;
 cards;

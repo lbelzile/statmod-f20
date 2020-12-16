@@ -15,7 +15,7 @@ pchisq(lrt, df = 1, lower.tail = FALSE)
 wald <- (mle - 0.1)/se_mle
 pchisq(wald^2, df = 1, lower.tail = FALSE)
 
-## Exercise 3.4
+## Exercise 3.3
 loglik <- function(y, beta, sales){
 stopifnot(length(y) == length(sales), length(beta) == 2L)
 sum(y*(beta[1] + beta[2]*sales) - exp(beta[1] + beta[2]*sales))
