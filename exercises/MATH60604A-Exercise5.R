@@ -73,9 +73,14 @@ car::Anova(model1, type = 3)
 model2 <- lm(mpost ~ group + mpre, data = baumann)
 # Test for significance using the confidence interval
 confint(modele2)["mpre",]
+# Or tweek the test to get the p-value and F-statistic 
+# (keep the offset, add mpre as covariate)
+car::Anova(lm(mpost ~ group + mpre, 
+              offset=mpre, data = baumann), type=3)[3,]
+LRT <- as.numeric(2*(logLik(model2) - logLik(model1)))
+pchisq(LRT, df = 1, lower.tail = FALSE)
 
 
-library(nlme)
 model3 <- gls(score ~ group*test, 
               data = baumann_long,
               correlation = nlme::corSymm(form = ~ 1 | id))
