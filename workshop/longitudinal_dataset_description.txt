@@ -161,7 +161,7 @@ Data provided by Dr Philip McCloud (Monash) on the weights (in kg) of
 ** dental		  						      **
 ********************************************************************************
 
-Change in an orthdontic measurement over time for several young subjects.
+Change in an orthodontic measurement over time for several young subjects.
 
 • distance : a numeric vector of distances from the pituitary to the 
   pterygomaxillary fissure (mm). These distances are measured on x-ray
