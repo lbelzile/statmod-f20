@@ -28,7 +28,7 @@ navbar:
   - text: Contributors
     href: articles/team.html
   right:
-  - icon: fa-github
+  - icon: "fab fa-github"
     href: https://github.com/lbelzile/statmod
 
 authors:
