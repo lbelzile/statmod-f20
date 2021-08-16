@@ -87,7 +87,7 @@
 
       
 
-      </header><script src="introSAS_files/header-attrs-2.7/header-attrs.js"></script><div class="row">
+      </header><script src="introSAS_files/header-attrs-2.9/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>SAS Introduction</h1>
@@ -109,42 +109,34 @@
 <li>Submit the form.</li>
 <li>Confirm that this is the correct course and then click the button to finish enrolling.</li>
 </ul>
-<p>To access the course database, use the following opening statement in your <strong>SAS</strong> script:</p>
-<p><code>LIBNAME statmod "~/my_shared_file_links/u41148888/statmod" access=readonly;</code></p>
-<p>You must create a local copy to modify these data.</p>
-<div id="sas-ondemand-for-academics-credentials" class="section level3">
-<h3 class="hasAnchor">
-<a href="#sas-ondemand-for-academics-credentials" class="anchor"></a>SAS® OnDemand for Academics credentials</h3>
-<p>Email me for the details</p>
-<!-- | Course Details | | -->
-<!-- |:----|:----| -->
-<!-- |Course name:  | MATH 60604A| -->
-<!-- |Level:|   Graduate | -->
-<!-- |Institution:| HEC Montreal | -->
-<!-- |Course Code:| `de87d662-6994-481b-9a3d-d50434654171`| -->
-<!-- |Description:| Statistical Modelling| -->
-</div>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>We will only use the SAS/BASE and SAS/STAT modules throughout the course. If you prefer to install <strong>SAS</strong> on your computer, there are two options.</p>
-<p>I recommend you install <a href="https://www.sas.com/en_us/software/university-edition.html">SAS University Edition (<strong>SAS UE</strong>)</a>, which is free for students. You can access the software from a web browser: the language depends on that of the latter. If you have a Mac (or Unix system), this solution helps you avoid having to install Windows 10 on a virtual machine (a stupid solution if I know one).</p>
-<p>If you have Windows PC, you could also install <strong>SAS</strong> directly. The institutional licence is provided for free, but the IT services at HEC charge users for the download of the software. If you bought the download in the past, you are eligible for free updates. This software may only be used as long as you are a student at HEC Montréal.</p>
-</div>
+<p>To automatically load the course data library (with read-only access) upon startup, paste the following line in your <strong>SAS</strong> autoexec script: <code>LIBNAME statmod "~/my_shared_file_links/u41148888/statmod" access=readonly;</code></p>
+<p><img src="../misc/SASonDemand_autoexec.png" style="width:75.0%" alt="Location of autoexec file in SASonDemand"><img src="../misc/SASonDemand_autoexec_2.png" style="width:75.0%" alt="Modify the autoexec file in SASonDemand"></p>
 <div id="sas-introduction" class="section level2">
 <h2 class="hasAnchor">
 <a href="#sas-introduction" class="anchor"></a><strong>SAS</strong> Introduction</h2>
-<p>If you access <strong>SAS</strong> via the server, you can load the data using the following command:</p>
+<p>To create a library with the introduction data, repeat the previous instruction with the following command:</p>
 <pre class="sas"><code>LIBNAME multi "~/my_shared_file_links/u41148888/multi" access=readonly;</code></pre>
-<p>Note that you will need to create copies to modify the files.</p>
+<p>You can also <a href="https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/Intro_SAS_data.zip">download the <code>.zip</code> archive</a> and create the library yourself. To do this, create a repository, upload the databases and use the graphical interface to link the folder to a library:</p>
+<div class="figure">
+<img src="../misc/SASonDemand_new_library.png" alt=""><p class="caption">Create a new library</p>
+</div>
+<div class="figure">
+<img src="../misc/SASonDemand_new_library_2.png" alt=""><p class="caption">Select the path for the library</p>
+</div>
+<p>Once you have the library <code>multi</code> set up, you can use the following links to begin the introduction. The video goes over the slides and the code used therein is provided. Once you have been over a section, you can try the exercises (the SAS file contains the solutions with comments, but I urge you to give a try before looking over the answers).</p>
 <ul>
-<li><a href="https://hecmontreal.yuja.com/V/Video?v=87020&amp;node=440156&amp;a=460010524&amp;autoplay=1">Video recording</a></li>
+<li><a href="https://hecmontreal.yuja.com/V/Video?v=87020&amp;node=440156&amp;a=460010524&amp;autoplay=1">Video recording (password: sas)</a></li>
 <li><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SAS_intro.pdf">Slides</a></li>
 <li><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SAS_intro.sas">Code</a></li>
 <li><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SASexercises.pdf">Exercises</a></li>
 <li><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/MATH60619A_SASexercises.sas">Exercises (<strong>SAS</strong> code)</a></li>
 <li><a href="https://raw.githubusercontent.com/lbelzile/statmod/master/introSAS/Intro_SAS_data.zip">Datasets (zip)</a></li>
 </ul>
+</div>
+<div id="installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h2>
+<p>We will only use the SAS/BASE and SAS/STAT modules throughout the course. If you have Windows PC, you could also install <strong>SAS</strong> directly. The institutional licence is provided for free, but the IT services at HEC charge users for the download of the software. If you bought the download in the past, you are eligible for free updates. This software may only be used as long as you are a student at HEC Montréal.</p>
 </div>
   </div>
 
