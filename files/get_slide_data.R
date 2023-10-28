@@ -54,7 +54,7 @@ names <- c("Course Outline",
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604A-slides/"
-codedir <- "../files/code"
+codedir <- "../files/code/"
 
 
 get_github_list <- function(user, repo, pattern){
@@ -129,7 +129,7 @@ video <- paste0("[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i>
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
 }
-linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/main/"
+linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/main/files/"
 
 codesas <- list.files(path = codedir, pattern = "MATH60604A.*.sas")
 codestr <- rep("", ns)
