@@ -1,4 +1,4 @@
-exdir <- "../exercises"
+exdir <- "../files/exercises"
 linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/statmod/blob/main/files/exercises/"
 linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/main/"
 ## exercise and solution files

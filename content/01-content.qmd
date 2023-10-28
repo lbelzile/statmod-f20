@@ -37,6 +37,6 @@ knitr::kable(sldat[which(sldat$S %in% c("0","1a","1b","1c")),], align = "llccccc
 - [Chapter 3 of _**R** for Data Science_ by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/)
 - [*Fundamentals of Data Visualization* by Claus O. Wilke](https://clauswilke.com/dataviz/)
 - [Do's and don'ts of making effective graphics](https://stat545.com/effective-graphs.html)
-- [Financial Times Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/tree/main/visual-vocabulary)
+- [Financial Times Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
 - [BBC R Cookbook (optional)](https://bbc.github.io/rcookbook/)
 - [What's going on in this graph?](https://www.nytimes.com/2020/06/10/learning/over-60-new-york-times-graphs-for-students-to-analyze.html)

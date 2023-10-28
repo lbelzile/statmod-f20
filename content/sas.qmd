@@ -4,7 +4,7 @@ title: SAS installation
 
 ## Create account
 
-As a first step, please create your account for SAS OnDemand for Academics. To register, visit https://odamid.oda.sas.com and click on Register for an account.
+As a first step, please create your account for SAS OnDemand for Academics. To register, visit [https://odamid.oda.sas.com](https://odamid.oda.sas.com) and click on Register for an account.
 
 After you have successfully created your account, follow these steps:
 
@@ -41,11 +41,11 @@ You can also [download the `.zip` archive](https://raw.githubusercontent.com/lbe
 Once you have the library `multi` set up, you can use the following links to begin the introduction. The video goes over the slides and the code used therein is provided. Once you have been over a section, you can try the exercises (the SAS file contains the solutions with comments, but I urge you to give a try before looking over the answers).
 
 - [Video recording (password: sas)](https://hecmontreal.yuja.com/V/Video?v=87020&node=440156&a=460010524&autoplay=1)
-- [Slides](https://raw.githubusercontent.com/lbelzile/statmod/main/introSAS/MATH60619A_SAS_intro.pdf)
-- [Code](https://raw.githubusercontent.com/lbelzile/statmod/main/introSAS/MATH60619A_SAS_intro.sas)
-- [Exercises](https://raw.githubusercontent.com/lbelzile/statmod/main/introSAS/MATH60619A_SASexercises.pdf)
-- [Exercises (**SAS** code)](https://raw.githubusercontent.com/lbelzile/statmod/main/introSAS/MATH60619A_SASexercises.sas)
-- [Datasets (zip)](https://raw.githubusercontent.com/lbelzile/statmod/main/introSAS/Intro_SAS_data.zip)
+- [Slides](https://raw.githubusercontent.com/lbelzile/statmod/main/files/introSAS/MATH60619A_SAS_intro.pdf)
+- [Code](https://raw.githubusercontent.com/lbelzile/statmod/main/files/introSAS/MATH60619A_SAS_intro.sas)
+- [Exercises](https://raw.githubusercontent.com/lbelzile/statmod/main/files/introSAS/MATH60619A_SASexercises.pdf)
+- [Exercises (**SAS** code)](https://raw.githubusercontent.com/lbelzile/statmod/main/files/introSAS/MATH60619A_SASexercises.sas)
+- [Datasets (zip)](https://raw.githubusercontent.com/lbelzile/statmod/main/files/introSAS/Intro_SAS_data.zip)
 
 
 
