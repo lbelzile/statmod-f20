@@ -13,7 +13,7 @@ knitr::kable(sldat[which(sldat$S %in% c("0","1a","1b","1c")),], align = "llccccc
 
 - Course notes: chapter 1 and Appendix A
 - Create an account on **SAS** onDemand 
-- Complete the [Introduction to **SAS**](content/sas.html)
+- Complete the [Introduction to **SAS**](sas.html)
 
 ### In class:
 

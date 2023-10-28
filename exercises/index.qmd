@@ -6,8 +6,8 @@ title: "Exercises"
 
 ```{r, echo=FALSE, eval=TRUE, message=FALSE}
 exdir <- "../files/exercises"
-linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/statmod/blob/master/exercises/"
-linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/master/"
+linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/statmod/blob/main/files/exercises/"
+linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/main/files/"
 ## exercise and solution files
 fn <- FALSE
 ex <- list.files(path = exdir, pattern = "MATH60604A-Exercise[[:digit:]].pdf", 

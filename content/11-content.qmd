@@ -17,7 +17,7 @@ knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.
   - conditional and marginal predictions
   - nested random effects
   - [partial pooling (blog post)](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/)
-- Analysis of chick growth curves: [SAS](https://raw.githubusercontent.com/lbelzile/statmod/main/code/files/60604A_random_slope.sas) and [R code](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_random_slope.R)
+- Analysis of chick growth curves: [SAS](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_random_slope.sas) and [R code](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_random_slope.R)
 
 
 ### After class: 

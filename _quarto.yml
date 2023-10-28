@@ -41,9 +41,6 @@ website:
         file: exercises/index.qmd
       - text: "Notes"
         href: "https://lbelzile.github.io/math60604a"
-      - icon: comment
-        href: "https://piazza.com/class/kcnzklt9pyj15y"
-        aria-label: Piazza
 
 
   sidebar:
